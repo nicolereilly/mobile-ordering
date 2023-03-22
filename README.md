@@ -1,9 +1,9 @@
 # 🍦 Trowbridges Mobile Order App 🍦
-# Story Card :yum: <br>
+# Story Card :clipboard: <br>
 __As a__
 Hungry customer :smirk: <br>
 __I want__
-A place an order online from Trowbridge <br>
+A place an order online from Trowbridge :yum: <br>
 __So that__
 I don't have to wait in line at the store :brain: <br>
 
@@ -15,7 +15,7 @@ I don't have to wait in line at the store :brain: <br>
 - [ ] Build your own order (based on available ingredients) <br>
 - [ ] Will have calculating functions <br>
 
-SPRINT
+SPRINT 
 
 Planning Doc = https://docs.google.com/document/d/1LCsx3Xpn0gFwEim1POCoGat2cU7GLLtu5vqXc2VbzS0/edit
 
