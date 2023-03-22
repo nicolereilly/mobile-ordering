@@ -1,4 +1,7 @@
 # 🍦 Trowbridges Mobile Order App 🍦
+_As a_
+Hungry customer :smirk:
+
 SPRINT
 
 Planning Doc = https://docs.google.com/document/d/1LCsx3Xpn0gFwEim1POCoGat2cU7GLLtu5vqXc2VbzS0/edit
