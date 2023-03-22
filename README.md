@@ -1,10 +1,15 @@
 # 🍦 Trowbridges Mobile Order App 🍦
+#Story Card :yum:
 __As a__
 Hungry customer :smirk: <br>
 __I want__
 A place an order online from Trowbridge <br>
 __So that__
 I don't have to wait in line at the store :brain: <br>
+
+#App Functions :nerd_face:
+
+
 
 SPRINT
 
