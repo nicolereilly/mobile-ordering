@@ -1,10 +1,10 @@
 # 🍦 Trowbridges Mobile Order App 🍦
 _As a_
-Hungry customer :smirk:
-I want_
-A place an order online from Trowbridge
-So that_
-I don't have to wait in line at the store :brain:
+Hungry customer :smirk: <br>
+_I want_
+A place an order online from Trowbridge <br>
+_So that_
+I don't have to wait in line at the store :brain: <br>
 
 SPRINT
 
