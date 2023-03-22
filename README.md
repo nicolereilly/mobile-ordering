@@ -1,9 +1,9 @@
 # 🍦 Trowbridges Mobile Order App 🍦
 _As a_
 Hungry customer :smirk:
-_I want_
+I want_
 A place an order online from Trowbridge
-_So that_
+So that_
 I don't have to wait in line at the store :brain:
 
 SPRINT
