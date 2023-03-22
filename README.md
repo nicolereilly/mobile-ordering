@@ -8,12 +8,12 @@ __So that__
 I don't have to wait in line at the store :brain: <br>
 
 # App Functions :nerd_face: <br>
-- [ ] Create a mobile order <br>
-- [ ] Update the order by adding or removing items <br>
-- [ ] Delete something from your order <br>
-- [ ] Send order summary to an email (the restaurant/customer) <br>
-- [ ] Build your own order (based on available ingredients) <br>
-- [ ] Will have calculating functions <br>
+Create a mobile order <br>
+Update the order by adding or removing items <br>
+Delete something from your order <br>
+Send order summary to an email (the restaurant/customer) <br>
+Build your own order (based on available ingredients) <br>
+Will have calculating functions <br>
 
 # Need to Do / Issues :wave: <br>
 __Create a__
