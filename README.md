@@ -3,7 +3,7 @@
 __As a__
 Hungry customer :smirk: <br>
 __I want__
-A place an order online from Trowbridge :yum: <br>
+A place an order online from Trowbridge's :yum: <br>
 __So that__
 I don't have to wait in line at the store :brain: <br>
 
@@ -17,7 +17,7 @@ Will have calculating functions <br>
 
 # Need to Do / Issues :wave: <br>
 __Create a__
-Mongo database that reflects the menu of Trowbridge <br>
+Mongo database that reflects the menu of Trowbridge's <br>
 __Create a__
 Render website that users can visit to place an order <br>
 Design of our web page needs the following: <br>
