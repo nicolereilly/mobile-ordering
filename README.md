@@ -1,6 +1,6 @@
-<c>
+
 #🍦 Trowbridge's Mobile Order App 🍦
-</c>
+
 ![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)
 
 # Story Card :clipboard: <br>
