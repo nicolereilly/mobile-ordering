@@ -1,5 +1,5 @@
 # 🍦 Trowbridge's Mobile Order App 🍦
-![Image](https://user-images.githubusercontent.com/111913185/229928332-0c89718c-b867-4afb-87bf-db7a63f6d116.png)
+![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)
 
 # Story Card :clipboard: <br>
 __As a__
@@ -8,6 +8,8 @@ __I want__
 A place an order online from Trowbridge's :yum: <br>
 __So that__
 I don't have to wait in line at the store :brain: <br>
+
+![Image](https://user-images.githubusercontent.com/111913185/229928332-0c89718c-b867-4afb-87bf-db7a63f6d116.png)
 
 # App Functions :nerd_face: <br>
 Create a mobile order <br>
