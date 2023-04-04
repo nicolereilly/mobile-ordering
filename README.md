@@ -46,4 +46,4 @@ MONGO_URI = mongodb+srv://lschmidt:y0bLuTb1EZCYw9fg@cluster0.8khag9y.mongodb.net
 
 ![image](https://user-images.githubusercontent.com/111534250/229915087-db9a3007-c199-45e3-80c8-365cfb8ce613.png)
 
-![image](https://user-images.githubusercontent.com/111534190/229918876-4ff8f012-f69e-42bf-a7f2-c053c79aa8a8.jpg)
+![image](https://user-images.githubusercontent.com/111534190/229919655-c6547acf-d411-42ec-a4fc-0bcad48be6d1.jpg)
