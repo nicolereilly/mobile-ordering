@@ -1,5 +1,4 @@
-
-#🍦 Trowbridge's Mobile Order App 🍦
+# 🍦 Trowbridge's Mobile Order App 🍦
 
 ![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)
 
