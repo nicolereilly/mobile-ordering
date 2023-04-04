@@ -1,4 +1,4 @@
-# 🍦 Trowbridges Mobile Order App 🍦
+# 🍦 Trowbridge's Mobile Order App 🍦
 # Story Card :clipboard: <br>
 __As a__
 Hungry customer :smirk: <br>
