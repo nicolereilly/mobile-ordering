@@ -9,8 +9,6 @@ A place an order online from Trowbridge's :yum: <br>
 __So that__
 I don't have to wait in line at the store :brain: <br>
 
-![Image](https://user-images.githubusercontent.com/111913185/229928332-0c89718c-b867-4afb-87bf-db7a63f6d116.png)
-
 # App Functions :nerd_face: <br>
 Create a mobile order <br>
 Update the order by adding or removing items <br>
@@ -18,6 +16,7 @@ Delete something from your order <br>
 Send order summary to an email (the restaurant/customer) <br>
 Build your own order (based on available ingredients) <br>
 Will have calculating functions <br>
+![Image](https://user-images.githubusercontent.com/111913185/229928332-0c89718c-b867-4afb-87bf-db7a63f6d116.png)
 
 # Need to Do / Issues :wave: <br>
 __Create a__
