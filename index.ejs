@@ -1,0 +1,58 @@
+
+<h2>
+  <%=herokuVar %>
+</h2>
+<html>
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">🍦Trowbridge's Mobile Order🍦</a>
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a target="_blank" class="nav-link active"
+          href="https://github.com/nicolereilly/mobile-ordering">Code Here!</a>
+      </li>
+      
+
+    </ul>
+  </div>
+</nav>
+
+<h1>Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!</h1>
+
+<h3>Start order below:</h3>
+
+<form method="POST" action="/addDrink">
+  <label for="drink_name">Flavor: </label>
+  <input name="drink_name" value="vanilla">
+  <br>
+  <label for="size">PRICE: </label>
+  <input name="size" value="$2.99">
+  <br>
+  <input type="submit" value="Create" />
+</form>
+
+
+<h3>Update your items</h3>
+<% for (var i=0; i< drinkData.length; i++ ) { %>
+  <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+    <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+        <input type="submit" value="Update">
+  </form>
+  <br />
+  <% } %>
+
+    <h3>Delete your items</h3>
+    <% for (var i=0; i< drinkData.length; i++ ) { %>
+      <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+        <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+            <input type="submit" value="Delete">
+      </form>
+      <br />
+      <% } %>
+        </body>
+
+</html>
