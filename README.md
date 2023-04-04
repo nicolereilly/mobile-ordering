@@ -1,4 +1,6 @@
 # 🍦 Trowbridge's Mobile Order App 🍦
+![Image](https://user-images.githubusercontent.com/111913185/229928332-0c89718c-b867-4afb-87bf-db7a63f6d116.png)
+
 # Story Card :clipboard: <br>
 __As a__
 Hungry customer :smirk: <br>
