@@ -1,5 +1,4 @@
 # 🍦 Trowbridge's Mobile Order App 🍦
-![Image] (./process.png)
 # Story Card :clipboard: <br>
 __As a__
 Hungry customer :smirk: <br>
