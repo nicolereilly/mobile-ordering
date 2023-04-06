@@ -11,117 +11,66 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-sm bg-light"> <!--Nav Bar-->
+    <h2>🍦Trowbridge's Mobile Order🍦</h2>
+  </nav>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand">🍦Trowbridge's Mobile Order🍦</a>
+  <h1>Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!</h1>
 
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a target="_blank" class="nav-link active"
-          href="https://github.com/nicolereilly/mobile-ordering">Code Here!</a>
-      </li>
-      
+  <h3>Start order below:</h3>
 
-    </ul>
-  </div>
-</nav>
-
-<h1>Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!</h1>
-
-<h3>Start order below:</h3>
-
-<form method="POST" action="/addDrink">
-  <label for="drink_name">Flavor: </label>
-  <input name="drink_name" value="vanilla">
-  <br>
-  <label for="size">PRICE: </label>
-  <input name="size" value="$2.99">
-  <br>
-  <input type="submit" value="Create" />
-</form>
+  <form method="POST" action="/addDrink">
+    <label for="drink_name">Flavor: </label>
+    <input name="drink_name" value="vanilla">
+    <br>
+    <label for="size">PRICE: </label>
+    <input name="size" value="$2.99">
+    <br>
+    <input type="submit" value="Create" />
+  </form>
 
 
-<h3>Update your items</h3>
-<% for (var i=0; i< drinkData.length; i++ ) { %>
+  <h3>Update your items</h3>
+  <% for (var i=0; i< drinkData.length; i++ ) { %>
   <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
     <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
-        <input type="submit" value="Update">
+      <input type="submit" value="Update">
   </form>
-  <br />
+  <br>
   <% } %>
 
-    <h3>Delete your items</h3>
-    <% for (var i=0; i< drinkData.length; i++ ) { %>
-      <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
-        <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
-            <input type="submit" value="Delete">
-      </form>
-      <br />
-      <% } %>
-        </body>
-
-</html>
-=======
-
-<h2>
-  <%=herokuVar %>
-</h2>
-<html>
-
-<head>
-  <title>
-    Trobridge Mobile Ordering
-  </title>
-  <link rel="stylesheet" href="./styles/style.css" />
-</head>
-<body>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand">🍦Trowbridge's Mobile Order🍦</a>
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a target="_blank" class="nav-link active"
-          href="https://github.com/nicolereilly/mobile-ordering">Code Here!</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<h1>Trobridge - Since 1918</h1>
-<h2>Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!</h2>
-
-<h3>Start order below:</h3>
-
-<form method="POST" action="/addDrink">
-  <label for="drink_name">Flavor: </label>
-  <input name="drink_name" value="vanilla">
-  <br>
-  <label for="size">Size: </label>
-  <input name="size" value="Small">
-  <br>
-  <input type="submit" value="Create" />
-</form>
-
-
-<h3>Update your items</h3>
-<% for (var i=0; i< drinkData.length; i++ ) { %>
-  <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+  <h3>Delete your items</h3>
+  <% for (var i=0; i< drinkData.length; i++ ) { %>
+  <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
     <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
-        <input type="submit" value="Update">
+      <input type="submit" value="Delete">
   </form>
-  <br />
+  <br>
   <% } %>
 
-    <h3>Delete your items</h3>
-    <% for (var i=0; i< drinkData.length; i++ ) { %>
-      <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
-        <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
-            <input type="submit" value="Delete">
-      </form>
-      <br />
-      <% } %>
-        </body>
+
+
+  <div class="card-footer"><!--footer-->
+    <div class="footer card">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Authors:</h4>
+          <p>Nicole Reilly</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Links for you:</h4>
+          <p><a href="https://gist.github.com/barrycumbie/de4aa0fcb0cad79a870305240d726cd0">Class Page</a></p>
+          <p><a href="https://github.com/nicolereilly">Nicole Reilly's GitHub</a></p>
+        </div>
+        <div class="col-md-4">
+          <h4>What makes this page work:</h4>
+          <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnicolereilly.github.io%2Findia-lab%2F">Page Valididty</a></p>
+          <p><a href="https://github.com/nicolereilly/mobile-ordering">Code Here!</a></p>
+        </div>
+        <h6>Consider this the copyright. Nicole Reilly Made This !</h6>
+      </div>
+    </div> 
+  </div>
+</body>
 
 </html>
