@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
 
 h1 {
     color: rgb(46, 15, 15);
