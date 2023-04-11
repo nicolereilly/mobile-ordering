@@ -12,14 +12,13 @@
 
 <body>
   <nav class="navbar navbar-expand-sm bg-light"> <!--Nav Bar-->
-    <h2>🍦Trowbridge's Mobile Order🍦</h2>
+    <h1>🍦Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!🍦</h1>
   </nav>
 
-  <h1>Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!</h1>
 
-  <h3>Start order below:</h3>
+  <h2>Start order below:</h2>
 
-  <form method="POST" action="/addDrink">
+  <form method="POST" action="/addDrink"> <!--Add Drink-->
     <label for="drink_name">Flavor: </label>
     <input name="drink_name" value="vanilla">
     <br>
@@ -31,6 +30,7 @@
 
 
   <h3>Update your items</h3>
+
   <% for (var i=0; i< drinkData.length; i++ ) { %>
   <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
     <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
@@ -40,6 +40,7 @@
   <% } %>
 
   <h3>Delete your items</h3>
+
   <% for (var i=0; i< drinkData.length; i++ ) { %>
   <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
     <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
@@ -53,7 +54,11 @@
     <p class=\"text-center\">Authors: Nicole Reilly, Katheryn White, Lane Schmidt, ect</p> 
   </footer> 
   
+  <nav class="navbar navbar-expand-sm bg-light"> <!--Nav Bar-->
+    <h1>🍦Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!🍦</h1>
+  </nav>
 
+  
 </body>
 
 </html>
