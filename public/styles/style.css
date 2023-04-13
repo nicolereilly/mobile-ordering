@@ -1,12 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-}
+
 
 h1 {
     color: rgb(46, 15, 15);
     font-family: 'Playball', cursive;
+    text-align: center;
+}
+
+.menu-card {
+    display: inline-block;
+    width: 300px;
+    height: 575px;
+    border: 2px solid #000000;
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+
+.flavor-card {
+    display: inline-block;
+    width: 550px;
+    height: 300px;
+    border: 2px solid #000000;
+}
+
+.footer-card{
+    margin:auto;
+    text-align: center;
+    display: inline-block;
 }
