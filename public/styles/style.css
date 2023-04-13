@@ -10,9 +10,11 @@ h1 {
 
 .menu-card {
     display: inline-block;
-    width: 300px;
+    width: 270px;
     height: 575px;
     border: 2px solid #000000;
+    margin-right: 15px;
+
 }
 
 hr.rounded {
@@ -20,12 +22,17 @@ hr.rounded {
     border-radius: 5px;
 }
 
-
+.icecream-card {
+    border: 2px solid #000000;
+    width: 450px;
+    height: 285px;
+}
 .flavor-card {
     display: inline-block;
-    width: 550px;
-    height: 300px;
     border: 2px solid #000000;
+    width: 300px;
+    height: 285px;
+    margin-right: 20px;
 }
 
 .footer-card{
