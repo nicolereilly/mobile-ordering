@@ -47,4 +47,4 @@ Team Project Board = https://github.com/users/nicolereilly/projects/1/views/1
 ![image](https://user-images.githubusercontent.com/111534250/229915087-db9a3007-c199-45e3-80c8-365cfb8ce613.png)
 
 # Sprint 2 Review in-class (4/18):
-Note document: https://docs.google.com/document/d/1YqHm4Fr2n2NVQ6e_CJ6-WkmV8JfLlsQE7Bty9D97hNA/edit
+Artifact is located at the wiki
