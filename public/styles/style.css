@@ -10,10 +10,12 @@ h1 {
 
 .menu-card {
     display: inline-block;
-    width: 270px;
-    height: 575px;
+    width: 250px;
+    height: 475px;
     border: 2px solid #000000;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: x-small;
 
 }
 
