@@ -43,7 +43,7 @@ Planning Doc = https://docs.google.com/document/d/1LCsx3Xpn0gFwEim1POCoGat2cU7GL
 
 Team Project Board = https://github.com/users/nicolereilly/projects/1/views/1
 
-# Sprint 1:
+# Sprint 1 Image:
 ![image](https://user-images.githubusercontent.com/111534250/229915087-db9a3007-c199-45e3-80c8-365cfb8ce613.png)
 
 # Sprint 2 Review in-class (4/18):
