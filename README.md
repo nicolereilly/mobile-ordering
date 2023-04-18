@@ -36,7 +36,7 @@ Design of our web page needs the following: <br>
 - [ ] Show cart contents and totals <br>
 - [ ] Enter customer info to place an order <br>
 - [ ] Submit or cancel <br>
-- [ ] Send confirmation to customer <br>
+- [ ] Send confirmation to customer <br>.
 
 
 Planning Doc = https://docs.google.com/document/d/1LCsx3Xpn0gFwEim1POCoGat2cU7GLLtu5vqXc2VbzS0/edit
