@@ -114,8 +114,8 @@ h1 {
 
 .menu-card {
     display: inline-block;
-    width: 400px;
-    height: 475px;
+    width: auto;
+    height: auto;
     border: 2px solid #000000;
     margin-right: 10px;
     margin-left: 10px;
@@ -130,8 +130,8 @@ hr.rounded {
 
 .icecream-card {
     display: auto;
-    width: 400px;
-    height: 475px;
+    width: auto;
+    height: auto;
     border: 2px solid #000000;
     margin-right: 10px;
     margin-left: 10px;
