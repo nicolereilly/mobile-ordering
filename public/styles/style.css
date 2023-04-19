@@ -133,8 +133,6 @@ hr.rounded {
     width: auto;
     height: auto;
     border: 2px solid #000000;
-    margin-right: 10px;
-    margin-left: 10px;
     font-size: x-small;
 }
 .flavor-card {
@@ -142,8 +140,6 @@ hr.rounded {
     width: auto;
     height: auto;
     border: 2px solid #000000;
-    margin-right: auto;
-    margin-left: auto;
     font-size: x-small;
 }
 
