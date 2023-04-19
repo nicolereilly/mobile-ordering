@@ -139,8 +139,8 @@ hr.rounded {
 }
 .flavor-card {
     display: auto;
-    width: 400px;
-    height: 475px;
+    width: auto;
+    height: auto;
     border: 2px solid #000000;
     margin-right: auto;
     margin-left: auto;
@@ -149,8 +149,8 @@ hr.rounded {
 
 .order-card {
     display: auto;
-    width: 400px;
-    height: 475px;
+    width: auto;
+    height: auto;
     border: 2px solid #000000;
     margin-right: auto;
     margin-left: auto;
