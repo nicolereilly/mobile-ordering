@@ -149,12 +149,11 @@ hr.rounded {
 
 .order-card {
     display: auto;
-    width: auto;
-    height: auto;
     border: 2px solid #000000;
-    margin-right: auto;
-    margin-left: auto;
     font-size: x-small;
+    width: 300px;
+    height: 285px;
+    margin-right: 20px;
 }
 
 .footer-card{
