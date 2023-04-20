@@ -30,8 +30,17 @@
 </nav>
 
 <body>
+  <!--WELCOME PAGE-->
+
+  <section id="content1" class="tab-content">
+    <h1>Welcome to the Trowbridge Mobile Order App!</h1>
+  </section>
+
+  <!--MENU PAGE-->
   <section id="content2" class="tab-content">
-    <h3>Browse Our Menu Below!</h3>
+    <br>
+    <h1>Browse Our Menu Below!</h1>
+    <br>
     <div class="row">
       <div class="menu-card">
         <h2 class="card-title">Sandwiches</h2>
@@ -96,7 +105,21 @@
       </div>
     </div>
     <br>
-    <h1>ICE CREAM FLAVORS</h1>
+
+    <h1>Ice Cream Sizes</h1>
+    <div class="icecream-card">
+      <div class="card-body">
+        <p>Cones / per dip -- $1.10</p>
+        <p>Dish -- $2.20</p>
+        <p>1/2 Pint -- $2.20</p>
+        <p>Pints -- $4.40</p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <h1>Ice Cream Flavors</h1>
+    <br>
     <div class="row">
       <div class="flavor-card">
         <div class="card-body">
@@ -128,22 +151,11 @@
           <p>Sugarfree Butter Pecan</p>
         </div>
       </div>
-      <div class="icecream-card">
-        <h2 class="card-title">Ice Cream Information</h2>
-        <hr class="rounded">
-        <div class="card-body">
-          <p>Cones / per dip -- $1.10</p>
-          <p>Dish -- $2.20</p>
-          <p>1/2 Pint -- $2.20</p>
-          <p>Pints -- $4.40</p>
-        </div>
-      </div>
     </div>
-
   </section>
-
+  <!--ORDER PAGE-->
   <section id="content3" class="tab-content">
-    <h3>Start order below:</h3>
+    <h1>Start order below:</h1>
 
     <!--DRINKS DROP DOWN-->
     <div class="dropdown">
@@ -208,7 +220,7 @@
         <a href="#">Cookie Dough ($1.10 per scoop)</a>
         <a href="#">Orange Pineapple ($1.10 per scoop)</a>
         <a href="#">O'Charleys Carmel Pie ($1.10 per scoop)</a>
-        <a href="#">CHocolate ($1.10 per scoop)</a>
+        <a href="#">Chocolate ($1.10 per scoop)</a>
         <a href="#">Strawberry ($1.10 per scoop)</a>
         <a href="#">Black Walnut ($1.10 per scoop)</a>
         <a href="#">Cookies and Cream ($1.10 per scoop)</a>
@@ -296,6 +308,7 @@
 
 
     <div class="order-card">
+      <h1>Your Cart:</h1>
       <form method="POST" action="/addDrink">
         <label for="drink_name">Flavor: </label>
         <input name="drink_name" value="vanilla">
@@ -333,33 +346,36 @@
     <div class="footer card">
       <div class="row">
         <div class="col-md-4">
-          <h4>Author:</h4>
-          <p>Nicole Reilly</p>
-          <p>Katheryn White</p>
-          <p>Lane Schmidt</p>
-          <p>Kevin Salgado</p>
-          <p>Maggie Little</p>
+          <br>
+          <h3><u>Authors:</u></h3>
+          <h5>  Nicole Reilly</h5>
+          <h5>  Katheryn White</h5>
+          <h5>  Lane Schmidt</h5>
+          <h5>  Kevin Salgado</h5>
+          <h5>  Maggie Little</h5>
         </div>
         <div class="col-md-4">
-          <h4>Links for you:</h4>
-          <p><a href="https://gist.github.com/barrycumbie/bbf76cb219a3e7579de1607d7e91fceb">Class Page</a></p>
-          <p><a href="https://github.com/nicolereilly">Nicole Reilly's GitHub</a></p>
-          <p><a href="https://github.com/katherynisabell">Katheryn White's GitHub</a></p>
-          <p><a href="https://github.com/lane30schmidt">Lane Schmidt's GitHub</a></p>
-          <p><a href="https://github.com/kbrian5">Kevin Salgado's GitHub</a></p>
-          <p><a href="https://github.com/mlittle98">Maggie Little's GitHub</a></p>
+          <br>
+          <h3><u>Links for you:</u></h3>
+          <h5><a href="https://gist.github.com/barrycumbie/bbf76cb219a3e7579de1607d7e91fceb">Class Page</a></h5>
+          <h5><a href="https://github.com/nicolereilly">Nicole Reilly's GitHub</a></h5>
+          <h5><a href="https://github.com/katherynisabell">Katheryn White's GitHub</a></h5>
+          <h5><a href="https://github.com/lane30schmidt">Lane Schmidt's GitHub</a></h5>
+          <h5><a href="https://github.com/kbrian5">Kevin Salgado's GitHub</a></h5>
+          <h5><a href="https://github.com/mlittle98">Maggie Little's GitHub</a></h5>
         </div>
         <div class="col-md-4">
-          <h4>What makes this page work:</h4>
-          <p><a href="https://github.com/nicolereilly/mobile-ordering">See The Code</a></p>
-          <p><a href="https://github.com/users/nicolereilly/projects/1">Here is our project page</a></p>
-          <p><a href="https://github.com/nicolereilly/mobile-ordering/wiki">Our Wiki</a></p>
+          <br>
+          <h3><u>What makes this page work:</u></h3>
+          <h5><a href="https://github.com/nicolereilly/mobile-ordering">See The Code</a></h5>
+          <h5><a href="https://github.com/users/nicolereilly/projects/1">Here is our project page</a></h5>
+          <h5><a href="https://github.com/nicolereilly/mobile-ordering/wiki">Our Wiki</a></h5>
         </div>
-        <h6>Consider this the copyright. Nicole Reilly, Katheryn White, Lane Schmidt, Kevin Salgado, and Maggie
-          Little Made This !</h6>
       </div>
     </div>
   </div>
+  <h6>Consider this the copyright. Nicole Reilly, Katheryn White, Lane Schmidt, Kevin Salgado, and Maggie
+    Little Made This!</h6>
   <nav>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
