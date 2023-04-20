@@ -149,7 +149,7 @@ hr.rounded {
 
 .order-card {
      display: auto;
-     width: 500px;
+     width: 1000px;
      height: 475px;
      border: 2px solid #000000;
      margin-top: 100px;
@@ -173,7 +173,7 @@ hr.rounded {
     font-size: 16px;
     border: none;
     word-wrap: normal;
-    width: 200px;
+    width: 250px;
     margin-top: 20px;
   }
   
