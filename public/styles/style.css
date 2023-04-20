@@ -111,15 +111,40 @@ h1 {
     font-family: 'Playball', cursive;
     text-align: center;
 }
+h2 {
+  color: rgb(46, 15, 15);
+  font-family: 'Playball', cursive;
+  text-align: center;
+}
+h3 {
+  color: rgb(46, 15, 15);
+  font-family: 'Playball', cursive;
+  text-align: left;
+}
+h4 {
+  color: rgb(46, 15, 15);
+  font-family: 'Playball', cursive;
+  text-align: center;
+}
+h5 {
+  color: rgb(46, 15, 15);
+  font-family: 'Playball', cursive;
+  text-align: left;
+}
+h6 {
+  color: rgb(46, 15, 15);
+  font-family: 'Playball', cursive;
+  text-align: center;
+}
 
 .menu-card {
     display: inline-block;
-    width: auto;
+    width: 228px;
     height: auto;
     border: 2px solid #000000;
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: x-small;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: small;
 
 }
 
@@ -129,22 +154,27 @@ hr.rounded {
 }
 
 .icecream-card {
-    display: auto;
-    width: auto;
+    display: inline-block;
+    width: 1170px;
     height: auto;
     border: 2px solid #000000;
-    font-size: x-small;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;  
 }
+
 .flavor-card {
-    display: auto;
-    width: auto;
+    display: inline-block;
+    width: 385px;
     height: auto;
     border: 2px solid #000000;
-    font-size: x-small;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: small;
+    padding-top: 5px;
 }
 
 .order-card {
@@ -152,18 +182,13 @@ hr.rounded {
      width: 1000px;
      height: 475px;
      border: 2px solid #000000;
+     padding-top: 20PX;
      margin-top: 100px;
      margin-right: auto;
      margin-left: auto;
      font-size: x-small;
  }
 
-.footer-card{
-    margin:auto;
-    text-align: center;
-    display: inline-block;
-    align-self:last baseline;
-}
 
 /* Dropdown Button */
 .dropbtn {
@@ -173,7 +198,7 @@ hr.rounded {
     font-size: 16px;
     border: none;
     word-wrap: normal;
-    width: 250px;
+    width: 285px;
     margin-top: 20px;
   }
   
@@ -209,3 +234,11 @@ hr.rounded {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #00d1f1;}
+
+  .footer-card{
+    margin:auto;
+    text-align: center;
+    display: inline-block;
+    align-self:last baseline;
+    padding-left: 50px;
+}
