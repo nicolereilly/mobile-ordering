@@ -124,12 +124,20 @@ h3 {
 h4 {
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
+<<<<<<< HEAD
   text-align: center;
+=======
+  text-align: left;
+>>>>>>> f83e0d7da0e6f633d5fb4dc91055d28c61db4267
 }
 h5 {
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
+<<<<<<< HEAD
   text-align: left;
+=======
+  text-align: center;
+>>>>>>> f83e0d7da0e6f633d5fb4dc91055d28c61db4267
 }
 h6 {
   color: rgb(46, 15, 15);
@@ -241,4 +249,8 @@ hr.rounded {
     display: inline-block;
     align-self:last baseline;
     padding-left: 50px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f83e0d7da0e6f633d5fb4dc91055d28c61db4267
