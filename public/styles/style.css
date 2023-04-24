@@ -23,15 +23,16 @@ a {
 .tab_container {
   width: auto;
   margin: auto;
-  padding-top: 25px;
+  padding-top: auto;
   position: auto;
   clear: both;
 }
 
+
+
 /*Clears contents when you change tabs*/
 section {
   clear: both;
-  padding-top: 0px;
   display: none;
   position: center;
 }
@@ -145,7 +146,7 @@ h5 {
 h6 {
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
-  text-align: center;
+  text-align: right;
 }
 
 .menu-card {
@@ -188,7 +189,7 @@ hr.rounded {
   padding-top: 5px;
 }
 
-.order-card {
+/* .order-card {
   display: auto;
   width: 1000px;
   height: 1000px;
@@ -196,9 +197,9 @@ hr.rounded {
   padding-top: 20PX;
   margin-top: 100px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 100px;
   font-size: x-small;
-}
+} */
 
 
 /* Dropdown Button */
@@ -255,11 +256,32 @@ hr.rounded {
 
 
 /*TEST CART */
+.checkout {
+  background: #00d1f1;
+  color: white;
+  padding: 16px 25px;
+  margin: 15px auto;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border;
+}
 
 /* Apply dollar signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
   content: '$';
+}
+
+.product-line-price{
+  color:white;
 }
 
 .product-quantity {
@@ -267,6 +289,9 @@ hr.rounded {
     width: 60px;
   }
 }
+
+
+/* Checkkout button */
 
 
 .footer-card {
