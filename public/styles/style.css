@@ -31,7 +31,6 @@ a {
 }
 
 
-
 /*Clears contents when you change tabs*/
 section {
   clear: both;
@@ -167,10 +166,7 @@ h6 {
 
 }
 
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
+
 
 .icecream-card {
   display: inline-block;
@@ -258,3 +254,16 @@ hr.rounded {
   background:#9c7e07;
 }
 
+/* These hide the radio buttons */
+
+#tab1 {
+  display: none;
+}
+
+#tab2 {
+  display: none;
+}
+
+#tab3 {
+  display: none;
+}
