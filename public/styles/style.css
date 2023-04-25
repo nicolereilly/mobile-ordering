@@ -208,7 +208,7 @@ hr.rounded {
 .product {
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid;
 }
 
 /* Apply dollar signs */
@@ -221,11 +221,13 @@ hr.rounded {
 }
 
 .product-quantity {
-  input {
     width: 60px;
-  }
 }
 
+.product {
+  padding-left: 50px;
+  display: inline-block;
+}
 
 .ordericecream-card {
   display: inline-block;
@@ -259,4 +261,3 @@ hr.rounded {
   align-self: last baseline;
   padding-left: 50px;
 }
-
