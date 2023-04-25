@@ -213,12 +213,6 @@ hr.rounded {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.product-details {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $color-border;
- 
-}
 
 /* Apply dollar signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
@@ -229,15 +223,13 @@ hr.rounded {
   color:white;
 }
 
-.product-quantity {
-  input {
-    width: 60px;
-  }
+.product{
+  padding-left: 20px;
+  display: inline-block;
 }
 
-
-
 /* Checkkout button */
+
 
 
 .footer-card {
