@@ -226,6 +226,10 @@ hr.rounded {
   }
 }
 
+.product {
+  padding-left: 50px;
+  display: inline-block;
+}
 
 /* Checkkout button */
 
