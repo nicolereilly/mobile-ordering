@@ -152,12 +152,13 @@ h6 {
 
 .menu-card {
   display: inline-block;
-  width: 228px;
+  width: 80%;
   height: auto;
-  border: 2px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: 3px solid #000000;
   font-size: small;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 
 }
 
@@ -168,31 +169,38 @@ hr.rounded {
 
 .icecream-card {
   display: inline-block;
-  width: 1170px;
+  width: 80%;
   height: auto;
-  border: 2px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: 3px solid #000000;
   font-size: small;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .flavor-card {
   display: inline-block;
-  width: 385px;
+  width: 80%;
   height: auto;
-  border: 2px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: 3px solid #000000;
   font-size: small;
-  padding-top: 5px;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
+.size-card {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  border: 3px solid #000000;
+  font-size: small;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+} 
 
-
-/*TEST CART */
+/* CART */
 .checkout {
   background: #00d1f1;
   color: white;
@@ -200,17 +208,12 @@ hr.rounded {
   margin: 15px auto;
   border: none;
   cursor: pointer;
-  width: 30%;
+  width: auto;
   border-radius: 8px;
   display: block;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.product {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid;
-}
 
 /* Apply dollar signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
@@ -221,51 +224,13 @@ hr.rounded {
   color:white;
 }
 
-.product-quantity {
-    width: 60px;
-}
-
-.product {
-  padding-left: 50px;
+.product{
+  padding-left: 20px;
   display: inline-block;
 }
 
-.ordericecream-card {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  border: 3px solid #000000;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: small;
-  padding-top: 5px;
-}
-
-.ordersandwiches-card {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  border: 3px solid #000000;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: small;
-  padding-top: 5px;
-}
-
-.orderdrinks-card {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  border: 3px solid #000000;
-  margin-top: 5px;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: small;
-  padding-top: 5px;
-}
 /* Checkkout button */
+
 
 
 .footer-card {
