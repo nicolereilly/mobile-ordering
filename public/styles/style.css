@@ -228,6 +228,7 @@ hr.rounded {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+<<<<<<< HEAD
 }
 
 /* Links inside the dropdown */
@@ -301,3 +302,78 @@ hr.rounded {
   align-self: last baseline;
   padding-left: 50px;
 }
+=======
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #00d1f1;
+}
+
+
+
+/*TEST CART */
+.checkout {
+  background: #00d1f1;
+  color: white;
+  padding: 16px 25px;
+  margin: 15px auto;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border;
+}
+
+/* Apply dollar signs */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
+}
+
+.product-line-price{
+  color:white;
+}
+
+.product-quantity {
+  input {
+    width: 60px;
+  }
+}
+
+
+/* Checkkout button */
+
+
+.footer-card {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  align-self: last baseline;
+  padding-left: 50px;
+}
+>>>>>>> d8a54054e55de69487e9daa544c581f5600b4f7d
