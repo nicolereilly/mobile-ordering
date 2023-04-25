@@ -240,3 +240,16 @@ hr.rounded {
   padding-left: 50px;
 }
 
+/* These hide the radio buttons */
+
+#tab1 {
+  display: none;
+}
+
+#tab2 {
+  display: none;
+}
+
+#tab3 {
+  display: none;
+}
