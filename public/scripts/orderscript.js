@@ -77,3 +77,32 @@ function removeItem(removeButton)
 }
 
 // Check out button
+
+
+
+
+
+$(function () { //CHARLIE info
+  $.each(CHARLIE, function (index, data) {  
+    $("#CHARLIE").append(
+      '<h3 class="card-title">' 
+      +
+      data.ProductName
+      +
+      '</h3><h3 class="card-body">' 
+      +
+      data.ProductPrice
+    );
+  });
+});
+
+
+const CHARLIE = [ //Charlie Games
+{ //Nicole Reilly
+ProductName: "icecream",
+ProductPrice: 3.90,
+gameName: "THE Doge Game",
+url: "https://nicolereilly.github.io/charlie-lab/"
+},  
+
+];
