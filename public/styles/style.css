@@ -3,16 +3,17 @@
 
 body {
   font-family: sans-serif;
-  background: #079c7e;
+  background: #D3F9DD ;
 }
 
 h1 {
-  color: #ccc;
+  color: #020000;
   text-align: center;
+  
 }
 
 a {
-  color: #ccc;
+  color: #0a0505;
   text-decoration: none;
   outline: none;
 }
@@ -36,6 +37,7 @@ section {
   clear: both;
   display: none;
   position: center;
+  
 }
 
 label {
@@ -50,7 +52,7 @@ label {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: #079c7e
+  background: #D3F9DD 
 }
 
 #tab1:checked~#content1,
@@ -60,9 +62,9 @@ label {
 #tab5:checked~#content5 {
   display: block;
   padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
+  background: #D3F9DD ;
+  color: #0c0808;
+  border-bottom: 2px solid #D3F9DD ;
 }
 
 .tab_container .tab-content p,
@@ -74,11 +76,13 @@ label {
 
 .tab_container .tab-content h3 {
   text-align: center;
+  background: #D3F9DD;
 }
 
 .tab_container [id^="tab"]:checked+label {
-  background: #fff;
-  box-shadow: inset 0 3px rgb(0, 0, 0);
+  background:#F9D3F7
+  ;
+  box-shadow: inset 0 3px #F9D3F7;
 }
 
 .tab_container [id^="tab"]:checked+label .fa {
@@ -154,11 +158,12 @@ h6 {
   display: inline-block;
   width: 80%;
   height: auto;
-  border: 3px solid #000000;
+  border: 3px solid #f9d3f7;
   font-size: small;
   margin:0 auto;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  background: #f9d3f7;
 
 }
 
@@ -171,33 +176,36 @@ hr.rounded {
   display: inline-block;
   width: 80%;
   height: auto;
-  border: 3px solid #000000;
+  border: 3px solid #D3F9DD;
   font-size: small;
   margin:0 auto;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  background:#f9d3f7;
 }
 
 .flavor-card {
   display: inline-block;
   width: 80%;
   height: auto;
-  border: 3px solid #000000;
+  border: 3px solid #D3F9DD;
   font-size: small;
   margin:0 auto;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  background:#f9d3f7;
 }
 
 .size-card {
   display: inline-block;
   width: 80%;
   height: auto;
-  border: 3px solid #000000;
+  border: 3px solid ;
   font-size: small;
   margin:0 auto;
   margin-bottom: 20px;
   padding-bottom: 10px;
+
 } 
 
 /* CART */
@@ -229,7 +237,15 @@ hr.rounded {
   display: inline-block;
 }
 
-/* Checkkout button */
+/* Total Card */
+.totals{
+  background:#D3ECF9;
+
+}
+
+.product{
+  background: #f9d3f7;
+}
 
 
 
@@ -239,5 +255,6 @@ hr.rounded {
   display: inline-block;
   align-self: last baseline;
   padding-left: 50px;
+  background:#9c7e07;
 }
 
