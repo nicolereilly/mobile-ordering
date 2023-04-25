@@ -221,7 +221,7 @@ h6 {
 
 .product{
   padding-left: 20px;
-  display: inline-block;
+  display: inline-flex;  
 }
 
 /* Checkkout button */
@@ -248,4 +248,22 @@ h6 {
 
 #tab3 {
   display: none;
+}
+
+#shoppingCart {
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  width: 300px; 
+}
+
+#spacer { 
+  width: 250px; 
+}
+
+
+
+input[type='number']{
+  width: 80px;
 }
