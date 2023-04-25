@@ -231,6 +231,28 @@ hr.rounded {
   display: inline-block;
 }
 
+.ordericecream-card {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: small;
+  padding-top: 5px;
+}
+
+.ordersandwiches-card {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: small;
+  padding-top: 5px;
+}
+
 /* Checkkout button */
 
 
@@ -241,3 +263,4 @@ hr.rounded {
   align-self: last baseline;
   padding-left: 50px;
 }
+
