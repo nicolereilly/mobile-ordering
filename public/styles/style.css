@@ -6,6 +6,17 @@ body {
   background: #f6f9fa;
 }
 
+.card {
+  height: auto;
+  border: 3px solid #000000;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: small;
+  padding-top: 5px;
+}
+
+
 h1 {
   color: #ccc;
   text-align: center;
@@ -151,13 +162,12 @@ h6 {
 
 .menu-card {
   display: inline-block;
-  width: 80%;
+  width: 228px;
   height: auto;
-  border: 3px solid #000000;
+  border: 2px solid #000000;
+  margin-right: 5px;
+  margin-left: 5px;
   font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
 
 }
 
@@ -168,38 +178,31 @@ hr.rounded {
 
 .icecream-card {
   display: inline-block;
-  width: 80%;
+  width: 1170px;
   height: auto;
-  border: 3px solid #000000;
+  border: 2px solid #000000;
+  margin-right: 5px;
+  margin-left: 5px;
   font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .flavor-card {
   display: inline-block;
-  width: 80%;
+  width: 385px;
   height: auto;
-  border: 3px solid #000000;
+  border: 2px solid #000000;
+  margin-right: 5px;
+  margin-left: 5px;
   font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
-.size-card {
-  display: inline-block;
-  width: 80%;
-  height: auto;
-  border: 3px solid #000000;
-  font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
 
-/* CART */
+
+/*TEST CART */
 .checkout {
   background: #00d1f1;
   color: white;
@@ -235,14 +238,13 @@ hr.rounded {
 }
 
 .product {
-  padding-right: 50px;
   padding-left: 50px;
   display: inline-block;
 }
 
 .ordericecream-card {
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   border: 3px solid #000000;
   margin-top: 5px;
@@ -254,7 +256,7 @@ hr.rounded {
 
 .ordersandwiches-card {
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   border: 3px solid #000000;
   margin-top: 5px;
@@ -266,7 +268,7 @@ hr.rounded {
 
 .orderdrinks-card {
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   border: 3px solid #000000;
   margin-top: 5px;
@@ -277,7 +279,7 @@ hr.rounded {
 }
 .ordermaltsshakes-card {
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   border: 3px solid #000000;
   margin-top: 5px;
@@ -288,7 +290,7 @@ hr.rounded {
 }
 .ordersoda-card{
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   border: 3px solid #000000;
   margin-top: 5px;
@@ -299,7 +301,7 @@ hr.rounded {
 }
 .ordersundaes-card{
   display: inline-block;
-  width: 100%;
+  width: auto;
   height: auto;
   border: 3px solid #000000;
   margin-top: 5px;
