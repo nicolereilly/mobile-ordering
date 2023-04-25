@@ -4,6 +4,7 @@
 body {
   font-family: sans-serif;
   background: #f6f9fa;
+  background-color: #DBF9FC;
 }
 
 h1 {
@@ -27,7 +28,6 @@ a {
   position: auto;
   clear: both;
 }
-
 
 
 /*Clears contents when you change tabs*/
@@ -158,13 +158,9 @@ h6 {
   margin:0 auto;
   margin-bottom: 20px;
   padding-bottom: 10px;
-
 }
 
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
+
 
 .icecream-card {
   display: inline-block;
@@ -240,3 +236,16 @@ hr.rounded {
   padding-left: 50px;
 }
 
+/* These hide the radio buttons */
+
+#tab1 {
+  display: none;
+}
+
+#tab2 {
+  display: none;
+}
+
+#tab3 {
+  display: none;
+}
