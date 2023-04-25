@@ -208,7 +208,7 @@ hr.rounded {
 .product {
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $color-border;
 }
 
 /* Apply dollar signs */
@@ -221,7 +221,9 @@ hr.rounded {
 }
 
 .product-quantity {
+  input {
     width: 60px;
+  }
 }
 
 .product {
@@ -254,6 +256,39 @@ hr.rounded {
 }
 
 .orderdrinks-card {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #000000;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: small;
+  padding-top: 5px;
+}
+.ordermaltsshakes-card {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #000000;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: small;
+  padding-top: 5px;
+}
+.ordersoda-card{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 3px solid #000000;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: small;
+  padding-top: 5px;
+}
+.ordersundaes-card{
   display: inline-block;
   width: auto;
   height: auto;
