@@ -61,9 +61,9 @@ label {
 #tab5:checked~#content5 {
   display: block;
   padding: 20px;
-  background: #D3F9DD ;
+  background: #54c6eb ;
   color: #0c0808;
-  border-bottom: 2px solid #D3F9DD ;
+  border-bottom: 2px solid #54c6eb ;
 }
 
 .tab_container .tab-content p,
@@ -75,7 +75,7 @@ label {
 
 .tab_container .tab-content h3 {
   text-align: center;
-  background: #D3F9DD;
+  background: #54c6eb;
 }
 
 .tab_container [id^="tab"]:checked+label {
@@ -206,7 +206,7 @@ h6 {
 
 /* CART */
 .checkout {
-  background: #00d1f1;
+  background: #8A89C0;
   color: white;
   padding: 16px 25px;
   margin: 15px auto;
@@ -243,16 +243,32 @@ h6 {
   background: #f9d3f7;
 }
 
+.order-card {
+  margin:0 auto;
+
+}
 
 
-.footer-card {
+ .footer-card {
   margin: auto;
   text-align: center;
   display: inline-block;
   align-self: last baseline;
   padding-left: 50px;
   background:#9c7e07;
-}
+  padding-left: 10%;
+} 
+
+/* .card-footer{
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  align-self: last baseline;
+  background:#9c7e07;
+  position: fixed-bottom;
+  margin:0 auto;
+  position: Center;
+} */
 
 /* These hide the radio buttons */
 
@@ -265,6 +281,10 @@ h6 {
 }
 
 #tab3 {
+  display: none;
+}
+
+#tab4 {
   display: none;
 }
 
