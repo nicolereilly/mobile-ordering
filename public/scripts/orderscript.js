@@ -7,7 +7,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🍦",
 
 	},
 	{
@@ -17,7 +16,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🍪",
 
 	},
 	{
@@ -27,7 +25,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🍑",
 	},
 	{
 		name: "Chocolate Caramel Cherry",
@@ -36,7 +33,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🍒"
 	},
 	{
 		name: "Rainbow Sherbert",
@@ -45,7 +41,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🌈",
 	},
 	{
 		name: "Cookie Dough",
@@ -54,7 +49,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🍪",
 
 	},
 	{
@@ -64,7 +58,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -74,7 +67,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -84,7 +76,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -94,7 +85,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -104,7 +94,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -114,7 +103,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "🍪",
 
 	},
 	{
@@ -124,7 +112,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -134,7 +121,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -144,7 +130,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -154,7 +139,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -164,7 +148,6 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
@@ -174,237 +157,223 @@ const menuArray = [
 		price1: 2.20,
 		price2: 2.20,
 		price3: 4.40,
-		emoji: "",
 
 	},
 	{
 		name: "Ham Sandwich",
 		id: 18,
 		price: 3.85,
-		emoji: "",
 
 	},
 	{
 		name: "Ham Salad",
 		id: 19,
 		price: 2.70,
-		emoji: "",
 
 	},
 	{
 		name: "Chicken Salad Sandwich",
 		id: 20,
 		price: 2.70,
-		emoji: "",
 
 	},
 	{
 		name: "Pimento Cheese Sandwich",
 		id: 21,
 		price: 2.70,
-		emoji: "",
 
 	},
 	{
 		name: "Egg & Olive",
 		id: 22,
 		price: 2.70,
-		emoji: "",
 
 	},
 	{
 		name: "Tuna Sandwich",
 		id: 23,
 		price: 2.70,
-		emoji: "",
 
 	},
 	{
 		name: "Tomato & Lettuce Sandwich",
 		id: 24,
 		price: 1.65,
-		emoji: "",
 
 	},
 	{
 		name: "Hot Dog",
 		id: 25,
 		price: 1.10,
-		emoji: "",
 
 	},
 	{
 		name: "Grilled Cheese",
 		id: 26,
 		price: 1.50,
-		emoji: "",
 
 	},
 	{
 		name: "Banana Sandwich",
 		id: 27,
 		price: 1.65,
-		emoji: "",
 
 	},
 	{
 		name: "Turkey Sandwich",
 		id: 28,
 		price: 3.85,
-		emoji: "",
 
 	},
 	{
 		name: "Biscuit/Jelly",
 		id: 29,
 		price: 0.75,
-		emoji: "",
 
 	},
 	{
 		name: "Ham & Biscuit",
 		id: 30,
 		price: 1.30,
-		emoji: "",
 
 	},
 	{
 		name: "Hot Chocolate",
 		id: 31,
 		price: 1.10,
-		emoji: "",
+
 	},
 	{
 		name: "Milk",
 		id: 32,
 		price: 1.00,
-		emoji: "",
+
 	},
 	{
 		name: "Coffee",
 		id: 33,
 		price: 0.95,
-		emoji: "",
+
 	},
 	{
 		name: "Soft Drinks",
 		id: 34,
 		price: 1.15,
-		emoji: "",
+
 	},
 	{
 		name: "Tea",
 		id: 35,
 		price: 0.95,
-		emoji: "",
+
 	},
 	{
 		name: "Lemonade",
 		id: 36,
 		price: 0.95,
-		emoji: "",
+
 	},
 	{
 		name: "Malts",
 		id: 37,
 		price: 2.70,
-		emoji: "",
+
 	},
 	{
 		name: "Shakes",
 		id: 38,
 		price: 2.60,
-		emoji: "",
+
 	},
 	{
 		name: "Large Chocolate Milk",
 		id: 39,
 		price: 1.30,
-		emoji: "",
+
 	},
 	{
 		name: "Small Chocolate Milk",
 		id: 40,
 		price: 1.10,
-		emoji: "",
+
 	},
 	{
 		name: "Banana Split Sundae",
 		id: 41,
 		price: 3.90,
-		emoji: "",
+
 	},
 	{
 		name: "Fruit Split Sundae",
 		id: 42,
 		price: 3.70,
-		emoji: "",
+
 	},
 	{
 		name: "Hot Fudge Sundae",
 		id: 43,
 		price: 2.80,
-		emoji: "",
+
 	},
 	{
 		name: "Hot Butterscotch Sundae",
 		id: 44,
 		price: 2.80,
-		emoji: "",
+
 	},
 	{
 		name: "Hot Caramel Sundae",
 		id: 45,
 		price: 2.80,
-		emoji: "",
+
 	},
 	{
 		name: "Fruit Sundae",
 		id: 46,
 		price: 3.05,
-		emoji: "",
+
 	},
 	{
 		name: "Cherry Sundae",
 		id: 47,
 		price: 2.75,
-		emoji: "",
+
 	},
 	{
 		name: "Pineapple Sundae",
 		id: 48,
 		price: 2.75,
-		emoji: "",
+
 	},
 	{
 		name: "Chocolate Sundae",
 		id: 49,
 		price: 2.75,
-		emoji: "",
+
 	},
 	{
 		name: "Strawberry Sundae",
 		id: 50,
 		price: 2.75,
-		emoji: "",
+
 	},
 	{
 		name: "Cherry Soda",
 		id: 51,
 		price: 1.10,
-		emoji: "",
+
 	},
 	{
 		name: "Strawberry Soda",
 		id: 52,
 		price: 1.10,
-		emoji: "",
+
 	},
 	{
 		name: "Chocolate Soda",
 		id: 53,
 		price: 1.10,
-		emoji: "",
+
 	}
 ]
 
@@ -415,7 +384,6 @@ function getMenuHtml() {
 	menuArray.forEach((menu) => {
 		menuHtml += `
       <div class="menu-items" id="menu-items">
-        <span>${menu.emoji}</span>
         <div class="details">
         <h3>${menu.name} - <strong>$${menu.price}</strong></div></h3>
       <button class="add-btn" data-item="${menu.id}">Scoop</button>
@@ -523,4 +491,23 @@ function completeOrder() {
 	modal.classList.remove("hidden")
 	modal.classList.add("visible")
 	overlay.style.display = "block"
+}
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
