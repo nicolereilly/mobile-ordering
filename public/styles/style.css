@@ -7,8 +7,6 @@ section {
   display: none;
   position: center;
   background: #D9F0FF ;
-
-  
 }
 
 .card{
@@ -171,11 +169,11 @@ margin-left: 0.5em;
 
 .add-btn{
 border: 0.5px solid D9F0FF;
-width: 150px;
+width: 200px;
 height: 50px;
 border-radius: 50%;
 box-shadow: 0 1.5px #666;
-font-size: 2em;
+font-size: 0.8em;
 font-weight: bold;  
 cursor: pointer;
 margin-right: 0.3em;  
