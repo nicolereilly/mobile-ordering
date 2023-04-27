@@ -1,381 +1,315 @@
 const menuArray = [
 	{
 		name: "Vanilla",
-		// ingredients: ["Scoop", "Dish", "1/2 Pint, Pint"],
 		id: 0,
 		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
 	},
 	{
 		name: "Chip Chocolate",
 		id: 1,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Peachy Peach",
 		id: 2,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
+		price: 1.10
 	},
 	{
 		name: "Chocolate Caramel Cherry",
 		id: 3,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
+		price: 1.10
 	},
 	{
 		name: "Rainbow Sherbert",
 		id: 4,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
+		price: 1.10
 	},
 	{
 		name: "Cookie Dough",
 		id: 5,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Orange Pineapple",
 		id: 6,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "O'Charley's Caramel Pie",
 		id: 7,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Chocolate",
 		id: 8,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Strawberry",
 		id: 9,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Black Walnut",
 		id: 10,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Cookies & Cream",
 		id: 11,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Butter Pecan",
 		id: 12,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Cherry Vanilla",
 		id: 13,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Red Velvet Cake",
 		id: 14,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Chocolate Marshmallow Almond",
 		id: 15,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
-		name: "Sugarfree Vanilla ",
+		name: "Sugarfree Vanilla",
 		id: 16,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
 	{
 		name: "Sugarfree Butter Pecan",
 		id: 17,
-		price: 1.10,
-		price1: 2.20,
-		price2: 2.20,
-		price3: 4.40,
-
+		price: 1.10
 	},
-	{
-		name: "Ham Sandwich",
-		id: 18,
-		price: 3.85,
-
-	},
-	{
-		name: "Ham Salad",
-		id: 19,
-		price: 2.70,
-
-	},
-	{
-		name: "Chicken Salad Sandwich",
-		id: 20,
-		price: 2.70,
-
-	},
-	{
-		name: "Pimento Cheese Sandwich",
-		id: 21,
-		price: 2.70,
-
-	},
-	{
-		name: "Egg & Olive",
-		id: 22,
-		price: 2.70,
-
-	},
-	{
-		name: "Tuna Sandwich",
-		id: 23,
-		price: 2.70,
-
-	},
-	{
-		name: "Tomato & Lettuce Sandwich",
-		id: 24,
-		price: 1.65,
-
-	},
-	{
-		name: "Hot Dog",
-		id: 25,
-		price: 1.10,
-
-	},
-	{
-		name: "Grilled Cheese",
-		id: 26,
-		price: 1.50,
-
-	},
-	{
-		name: "Banana Sandwich",
-		id: 27,
-		price: 1.65,
-
-	},
-	{
-		name: "Turkey Sandwich",
-		id: 28,
-		price: 3.85,
-
-	},
-	{
-		name: "Biscuit/Jelly",
-		id: 29,
-		price: 0.75,
-
-	},
-	{
-		name: "Ham & Biscuit",
-		id: 30,
-		price: 1.30,
-
-	},
-	{
-		name: "Hot Chocolate",
-		id: 31,
-		price: 1.10,
-
-	},
-	{
-		name: "Milk",
-		id: 32,
-		price: 1.00,
-
-	},
-	{
-		name: "Coffee",
-		id: 33,
-		price: 0.95,
-
-	},
-	{
-		name: "Soft Drinks",
-		id: 34,
-		price: 1.15,
-
-	},
-	{
-		name: "Tea",
-		id: 35,
-		price: 0.95,
-
-	},
-	{
-		name: "Lemonade",
-		id: 36,
-		price: 0.95,
-
-	},
-	{
-		name: "Malts",
-		id: 37,
-		price: 2.70,
-
-	},
-	{
-		name: "Shakes",
-		id: 38,
-		price: 2.60,
-
-	},
-	{
-		name: "Large Chocolate Milk",
-		id: 39,
-		price: 1.30,
-
-	},
-	{
-		name: "Small Chocolate Milk",
-		id: 40,
-		price: 1.10,
-
-	},
-	{
-		name: "Banana Split Sundae",
-		id: 41,
-		price: 3.90,
-
-	},
-	{
-		name: "Fruit Split Sundae",
-		id: 42,
-		price: 3.70,
-
-	},
-	{
-		name: "Hot Fudge Sundae",
-		id: 43,
-		price: 2.80,
-
-	},
-	{
-		name: "Hot Butterscotch Sundae",
-		id: 44,
-		price: 2.80,
-
-	},
-	{
-		name: "Hot Caramel Sundae",
-		id: 45,
-		price: 2.80,
-
-	},
-	{
-		name: "Fruit Sundae",
-		id: 46,
-		price: 3.05,
-
-	},
-	{
-		name: "Cherry Sundae",
-		id: 47,
-		price: 2.75,
-
-	},
-	{
-		name: "Pineapple Sundae",
-		id: 48,
-		price: 2.75,
-
-	},
-	{
-		name: "Chocolate Sundae",
-		id: 49,
-		price: 2.75,
-
-	},
-	{
-		name: "Strawberry Sundae",
-		id: 50,
-		price: 2.75,
-
-	},
-	{
-		name: "Cherry Soda",
-		id: 51,
-		price: 1.10,
-
-	},
-	{
-		name: "Strawberry Soda",
-		id: 52,
-		price: 1.10,
-
-	},
-	{
-		name: "Chocolate Soda",
-		id: 53,
-		price: 1.10,
-
-	}
 ]
+
+
+
+// 	{
+// 		name: "Ham Sandwich",
+// 		id: 18,
+// 		price: 3.85,
+
+// 	},
+// 	{
+// 		name: "Ham Salad",
+// 		id: 19,
+// 		price: 2.70,
+
+// 	},
+// 	{
+// 		name: "Chicken Salad Sandwich",
+// 		id: 20,
+// 		price: 2.70,
+
+// 	},
+// 	{
+// 		name: "Pimento Cheese Sandwich",
+// 		id: 21,
+// 		price: 2.70,
+
+// 	},
+// 	{
+// 		name: "Egg & Olive",
+// 		id: 22,
+// 		price: 2.70,
+
+// 	},
+// 	{
+// 		name: "Tuna Sandwich",
+// 		id: 23,
+// 		price: 2.70,
+
+// 	},
+// 	{
+// 		name: "Tomato & Lettuce Sandwich",
+// 		id: 24,
+// 		price: 1.65,
+
+// 	},
+// 	{
+// 		name: "Hot Dog",
+// 		id: 25,
+// 		price: 1.10,
+
+// 	},
+// 	{
+// 		name: "Grilled Cheese",
+// 		id: 26,
+// 		price: 1.50,
+
+// 	},
+// 	{
+// 		name: "Banana Sandwich",
+// 		id: 27,
+// 		price: 1.65,
+
+// 	},
+// 	{
+// 		name: "Turkey Sandwich",
+// 		id: 28,
+// 		price: 3.85,
+
+// 	},
+// 	{
+// 		name: "Biscuit/Jelly",
+// 		id: 29,
+// 		price: 0.75,
+
+// 	},
+// 	{
+// 		name: "Ham & Biscuit",
+// 		id: 30,
+// 		price: 1.30,
+
+// 	},
+// 	{
+// 		name: "Hot Chocolate",
+// 		id: 31,
+// 		price: 1.10,
+
+// 	},
+// 	{
+// 		name: "Milk",
+// 		id: 32,
+// 		price: 1.00,
+
+// 	},
+// 	{
+// 		name: "Coffee",
+// 		id: 33,
+// 		price: 0.95,
+
+// 	},
+// 	{
+// 		name: "Soft Drinks",
+// 		id: 34,
+// 		price: 1.15,
+
+// 	},
+// 	{
+// 		name: "Tea",
+// 		id: 35,
+// 		price: 0.95,
+
+// 	},
+// 	{
+// 		name: "Lemonade",
+// 		id: 36,
+// 		price: 0.95,
+
+// 	},
+// 	{
+// 		name: "Malts",
+// 		id: 37,
+// 		price: 2.70,
+
+// 	},
+// 	{
+// 		name: "Shakes",
+// 		id: 38,
+// 		price: 2.60,
+
+// 	},
+// 	{
+// 		name: "Large Chocolate Milk",
+// 		id: 39,
+// 		price: 1.30,
+
+// 	},
+// 	{
+// 		name: "Small Chocolate Milk",
+// 		id: 40,
+// 		price: 1.10,
+
+// 	},
+// 	{
+// 		name: "Banana Split Sundae",
+// 		id: 41,
+// 		price: 3.90,
+
+// 	},
+// 	{
+// 		name: "Fruit Split Sundae",
+// 		id: 42,
+// 		price: 3.70,
+
+// 	},
+// 	{
+// 		name: "Hot Fudge Sundae",
+// 		id: 43,
+// 		price: 2.80,
+
+// 	},
+// 	{
+// 		name: "Hot Butterscotch Sundae",
+// 		id: 44,
+// 		price: 2.80,
+
+// 	},
+// 	{
+// 		name: "Hot Caramel Sundae",
+// 		id: 45,
+// 		price: 2.80,
+
+// 	},
+// 	{
+// 		name: "Fruit Sundae",
+// 		id: 46,
+// 		price: 3.05,
+
+// 	},
+// 	{
+// 		name: "Cherry Sundae",
+// 		id: 47,
+// 		price: 2.75,
+
+// 	},
+// 	{
+// 		name: "Pineapple Sundae",
+// 		id: 48,
+// 		price: 2.75,
+
+// 	},
+// 	{
+// 		name: "Chocolate Sundae",
+// 		id: 49,
+// 		price: 2.75,
+
+// 	},
+// 	{
+// 		name: "Strawberry Sundae",
+// 		id: 50,
+// 		price: 2.75,
+
+// 	},
+// 	{
+// 		name: "Cherry Soda",
+// 		id: 51,
+// 		price: 1.10,
+
+// 	},
+// 	{
+// 		name: "Strawberry Soda",
+// 		id: 52,
+// 		price: 1.10,
+
+// 	},
+// 	{
+// 		name: "Chocolate Soda",
+// 		id: 53,
+// 		price: 1.10,
+
+// 	}
+// ]
 
 let orderedItems = [];
 
@@ -384,14 +318,9 @@ function getMenuHtml() {
 	menuArray.forEach((menu) => {
 		menuHtml += `
       <div class="menu-items" id="menu-items">
-        <div class="details">
-        <h3>${menu.name} - <strong>$${menu.price}</strong></div></h3>
-      <button class="add-btn" data-item="${menu.id}">Scoop</button>
-      <button class="add-btn" data-item="${menu.id}">Dish</button>
-      <button class="add-btn" data-item="${menu.id}">1/2 Pint</button>
-      <button class="add-btn" data-item="${menu.id}">Pint</button>
-      </div>
-      `;
+      <button class="add-btn" data-item="${menu.id}">${menu.name}</button>
+
+      </div>`;
 	});
 	return menuHtml;
 }
@@ -501,13 +430,13 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+	acc[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+			panel.style.display = "none";
+		} else {
+			panel.style.display = "block";
+		}
+	});
 }
