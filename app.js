@@ -5,14 +5,33 @@ const bodyParser = require('body-parser')
 const { urlencoded } = require('body-parser')
 const { ObjectId } = require('mongodb')
 const PORT = process.env.PORT || 3000;
-const herokuVar = process.env.HEROKU_NAME || "local Barry"
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+const menuClient = new MongoClient(process.env.MONGO_MENU_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
 
-let someVar = "";
+async function cxnMenu(){
+
+  try{
+    menuClient.connect; 
+    const trowCollection = menuClient.db("trowbridges").collection("menu");
+    // console.log(trowCollection);
+    const menu = await trowCollection.find().toArray();     
+    // console.log(menu);
+    return menu; 
+  }
+  catch(e){
+      console.log(e)
+  }
+  finally{
+    menuClient.close; 
+  }
+
+}
+
 
 async function cxnDB(){
 
@@ -48,6 +67,18 @@ app.get('/', async (req, res) => {
   })
 })
 
+app.get('/order', async (req, res) => {
+  
+  let menu = await cxnMenu().catch(console.error); 
+
+    console.log(menu); 
+   
+    res.render('new-order', {
+      menu : menu 
+    })
+
+})
+
 app.post('/addDrink', async (req, res) => {
 
   try {
@@ -62,11 +93,10 @@ app.post('/addDrink', async (req, res) => {
     console.log(error)
   }
   finally{
-   // client.close()
+     client.close()
   }
 
 })
-
 
 app.post('/updateDrink/:id', async (req, res) => {
 

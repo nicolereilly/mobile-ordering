@@ -1,0 +1,22 @@
+<head> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="styles/style.css"> -->
+</head>
+
+<section id="content2" class="tab-content">
+  <h1>Browse Our Menu Below!</h1>
+ 
+
+  <% for (var i=0; i< menu.length; i++ ) { %>
+  
+    <% if(menu[i].category=="Sundaes") { %>
+  <div class="card">
+    <h2 class="card-title"><%= menu[i].category %></h2>
+    <% } %>
+
+    <div class="card-body">
+      <p> <%= menu[i].item %>,  <%= menu[i].price %> </p>
+    </div>
+  </div>
+
+  <% } %> 
