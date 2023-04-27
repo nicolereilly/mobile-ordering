@@ -54,7 +54,7 @@ h1 {
 h2 {
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
-  text-align: left;
+  text-align: center;
 }
 
 h3 { 
@@ -122,12 +122,12 @@ body,button {
   font-family: 'Smythe', cursive;
 }
 
-.text-container {
+/* .text-container {
 position: absolute;
 top: 1em;
 color: D9F0FF;
 margin-left: 1em;
-}
+} */
 
 /* layout */
 
@@ -142,25 +142,26 @@ margin-top: 20px;
 /* menu */
 .menu {
   display:flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  width: 110%;
   margin-top: 20px;
 }
 
-.menu-items {
+/* .menu-items {
 display: flex;
 align-items: center;
 flex-direction: row;
 width: 100%;
 border-bottom: 1px solid #D9F0FF;
 margin-bottom: 0.5em;
-}
+} */
 
-.menu-items>span {
+/* .menu-items>span {
 font-size: 4rem;
 margin-right: 0.5em;
 margin-left: 0.5em;
-}
+} */
 
 .details {
   width: 30%;
@@ -178,6 +179,7 @@ font-weight: bold;
 cursor: pointer;
 margin-right: 0.3em;  
 background: #F0F9FF;
+display: inline-block;
 }
 
 .add-btn:active,
@@ -274,9 +276,9 @@ justify-content: center;
 position: fixed;
 top: 0;
 left: 0;
-width: 100vw;
-height: 100vh;
-background-color: #86d3f4; 
+width: 200vw;
+height: 150vh;
+background-color: #D9F0FF; 
 display: none;
 }
 
@@ -378,56 +380,4 @@ display:none
 
 .visible{
 display:block
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }

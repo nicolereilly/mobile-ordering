@@ -100,18 +100,10 @@ function getMenuHtml() {
 		menuHtml += `
       <div class="menu-items" id="menu-items">
       <button class="add-btn" data-item="${menu.id}">${menu.name}</button>
-
       </div>`;
 	});
 	return menuHtml;
 }
-
-
-
-
-
-
-
 
 document.addEventListener("click", (e) => {
 	document.getElementById("order-total").classList.remove("hidden");
@@ -180,17 +172,15 @@ function renderOrderedItems() {
 
 function renderTotal() {
 	const itemPrices = orderedItems.map((item) => item.price);
-	const totalPrice = itemPrices.reduce((a, b) => a + b, 0);
+	const totalPrice = itemPrices.reduce((a, b) => a + b, 0).toFixed(2);
 	document.getElementById(
 		"total-price"
+	//let totalPrice = num.toFixed(2);
 	).innerHTML = `Total Price: <span>$${totalPrice}</span>`;
 }
 
 function renderMenu() {
 	document.getElementById("scoop").innerHTML = getMenuHtml();
-	document.getElementById("dish").innerHTML = getMenuHtml();
-	document.getElementById("halfpint").innerHTML = getMenuHtml();
-	document.getElementById("pint").innerHTML = getMenuHtml();
 }
 
 renderMenu();
