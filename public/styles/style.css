@@ -34,9 +34,9 @@ label {
 #tab5:checked~#content5 {
   display: block;
   padding: 20px;
-  background: #54c6eb ;
+  background: #D9F0FF ;
   color: #0c0808;
-  border-bottom: 2px solid #54c6eb ;
+  border-bottom: 2px solid #D9F0FF ;
 }
 
 
@@ -83,7 +83,7 @@ h6 {
   display: inline-block;
   align-self: last baseline;
   padding-left: 50px;
-  background:#9c7e07;
+  background:#D9F0FF;
   padding-left: 10%;
 } 
 
@@ -123,7 +123,7 @@ h6 {
 
 
 html{
-  background: #BFD7EA;;
+  background: #D9F0FF;;
 }
 
 body{
@@ -138,7 +138,7 @@ body,button {
 .text-container {
 position: absolute;
 top: 1em;
-color: white;
+color: D9F0FF;
 margin-left: 1em;
 }
 
@@ -147,7 +147,7 @@ margin-left: 1em;
 main,header {
 width: 80%;
 margin: 0 auto;
-background: #F0F9FF;
+background: #D9F0FF;
 text-align: center;
 margin-top: 20px;
 }
@@ -164,8 +164,8 @@ margin-top: 20px;
 display: flex;
 align-items: center;
 flex-direction: row;
-width: 80%;
-border-bottom: 1px solid #D2D2D2;
+width: 100%;
+border-bottom: 1px solid #D9F0FF;
 margin-bottom: 0.5em;
 }
 
@@ -181,8 +181,8 @@ margin-left: 0.5em;
 }
 
 .add-btn{
-border: 0.5px solid grey;
-width: 250px;
+border: 0.5px solid D9F0FF;
+width: 150px;
 height: 50px;
 border-radius: 50%;
 box-shadow: 0 1.5px #666;
@@ -220,21 +220,21 @@ align-items: center;
 }
 
 h3#total-price {
-    width: 80%;
+    width: 100%;
 
 }
 
 .order-items,.item-row{
-height: 35px;
+height: 100px;
 /* margin:0.5em; */
-font-size: x-large;
+font-size: large;
 
 }
 
 div#order-items {
     display: flex;
-    width: 80%;
-    font-size: x-large;
+    width: 100%;
+    font-size: large;
 
 
 }
@@ -264,7 +264,7 @@ cursor: pointer;
 .order-total,.remove-btn {
 text-align: center;
 font-size: 1.3rem;
-font-size: x-large;
+font-size: large;
 
 }
 
@@ -289,7 +289,7 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-color: #FF5A5F; 
+background-color: #86d3f4; 
 display: none;
 }
 
