@@ -10,7 +10,19 @@ section {
   clear: both;
   display: none;
   position: center;
+  background: #D9F0FF ;
+
   
+}
+
+
+.card{
+  background: #D9F0FF ;
+  border-width: 0.2cm;
+}
+.card-body{
+  position: center;
+  text-align: center;
 }
 /* Styles for tabs */
 label {
@@ -87,7 +99,9 @@ h6 {
   padding-left: 10%;
 } 
 
-
+.tab_container{
+  background: #7681B3 ;
+}
 /* These hide the radio buttons */
 
 #tab1 {

@@ -37,11 +37,14 @@
 
 <body>
   <!-- START WELCOME PAGE-->
-
   <section id="content1" class="tab-content">
-    <h1>Welcome to the Trowbridge Mobile Order App!</h1>
-    <h3>History</h3>
-    <h4>Trowbridge’s and Sandwich Shop (nee Bar), located at 316 North Court Street, is a truly a Florence,
+    <div class="card">
+      <div class="card-title">
+       <h1>Welcome to the Trowbridge Mobile Order App!</h1> 
+       <h2>History</h2>     
+      </div>
+      <div class="card-body">
+        <h4>Trowbridge’s and Sandwich Shop (nee Bar), located at 316 North Court Street, is a truly a Florence,
       Alabama landmark. Opened in 1918, Trowbridge’s is the oldest business still operating in its original location in
       Florence. Still owned by the Trowbridge family (third generation, Paul’s grandson, Don), the shop seats fifty, and
       the menu features sandwiches, chili, ice cream, milkshakes, and Wednesdays are bean day.
@@ -53,7 +56,15 @@
       Trowbridge’s. Locals of a certain age will recognize the waitresses of yesteryear in the oil painting on the back
       wall. Several small tables are scattered between the booths and the counter. The green vinyl padding on the stools
       and the chairs, alongside the 1950s style formica tables, give the place a completely unassuming retro feel.</h4>
-  </section>
+      <img src="/img/outsidebuilding.png" alt="outside of Trowbridges">
+      <img src="/img/insidemenu.png" alt="Menu inside of Trowbridges">
+      <img src="/img/interior.png" alt="Interior of Trowbridges">
+      <img src="/img/exterior.png" alt="exterior of Trowbridges" style="width:250px;height:183px;">
+      </div>
+    </div>
+
+    
+    </section>
   <!-- END WELCOME PAGE-->
 
   <!-- START MENU PAGE -->
@@ -74,6 +85,7 @@
     <br>
     <h1> <u> Start Your Order</u></h1>
     <div class="menu" id="menu">
+      
     </div>
 
     <div class="order-completed-container" id="order-completed-container">
@@ -99,6 +111,7 @@
           <h2>Enter card details</h2>
           <label for="name"></label>
           <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <input id="email" name="Email" type="email" placeholder="janedoe@gmail.com" required>
           <label for="cardNumber"></label>
           <input type="number" id="cardNumber" placeholder="Enter your card number"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"

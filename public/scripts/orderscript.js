@@ -473,7 +473,9 @@ function renderThankScreen(e) {
 	el.remove()
 
 	const payerName = document.getElementById("name").value
-	document.getElementById("thankyou-screen").innerHTML = `<p>Thanks, ${payerName}! Your order is on its way! Please refresh your homepage to go back to the ordering screen</p>  
+	const payerEmail = document.getElementById("email").value
+
+	document.getElementById("thankyou-screen").innerHTML = `<h1>Thanks, ${payerName}! Your order is on its way! Check your email at ${payerEmail} to check on its status! Please refresh your homepage to go back to the ordering screen </h1>
   `
 }
 
