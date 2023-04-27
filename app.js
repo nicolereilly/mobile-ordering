@@ -8,9 +8,12 @@ const PORT = process.env.PORT || 3000;
 const herokuVar = process.env.HEROKU_NAME || "local Barry"
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+const nodemailer = require('nodemailer')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 let someVar = "";
 
@@ -118,3 +121,34 @@ app.listen(PORT, () => {
   console.log(`Server is running & listening on port ${PORT}`);
 });
 
+
+app.post('/gmail', (req, res) => {
+
+  console.log("here");
+  console.log(req.body); 
+
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'laneslyf@gmail.com',
+      pass: process.env.APP_PWD
+    }
+  });
+
+  var mailOptions = {
+    from: 'laneslyf@gmail.com',
+    to: req.body.email,
+    subject: 'Trowbridges Mobile Ordering Confirmation!',
+    text: 'Hello, cool order' + req.body.name
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
+  res.redirect('/');
+})
