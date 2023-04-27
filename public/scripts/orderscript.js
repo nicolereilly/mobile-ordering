@@ -418,11 +418,15 @@ function getMenuHtml() {
         <span>${menu.emoji}</span>
         <div class="details">
         <h3>${menu.name} - <strong>$${menu.price}</strong></div></h3>
-      <button class="add-btn" data-item="${menu.id}">Scoop</button>
-      <button class="add-btn" data-item="${menu.id}">Dish</button>
-      <button class="add-btn" data-item="${menu.id}">1/2 Pint</button>
+      <button class="add-btn" data-item="${menu.id}">Scoop${menu.price}</button>`;
+
+	  if(menu.price1){menuHtml += ` <button class="add-btn" data-item="${menu.id}">Dish ${menu.price1}</button>
+	  <button class="add-btn" data-item="${menu.id}">1/2 Pint</button>
       <button class="add-btn" data-item="${menu.id}">Pint</button>
-      </div>
+      `;}
+
+	  menuHtml += `
+	  </div>
       `;
 	});
 	return menuHtml;

@@ -48,6 +48,12 @@ app.get('/', async (req, res) => {
   })
 })
 
+app.get('/collapse', async (req, res) => {
+
+  res.render('collapse-order'); 
+
+})
+
 app.post('/addDrink', async (req, res) => {
 
   try {

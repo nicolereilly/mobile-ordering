@@ -1,0 +1,648 @@
+<html lang="html">
+
+<head>
+    <title>Trowbridge's Mobile Order</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
+    
+</head>
+
+1
+
+<section id="content3" class="tab-content">
+  <!-- <div class="container mt-3"> -->
+
+    <h1> <u> Start Your Order</u></h1>
+  <div class="menu" id="menu">
+  </div>
+</section>  
+
+<!-- w3c code -->
+    
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+          Collapsible Group Item #2
+        </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Collapsible Group Item #3
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"></script>
+  <script>
+
+const menuArray = [
+	{ category: "Ice Cream", 
+	  items: [
+	{
+		name: "Vanilla",
+		// ingredients: ["Scoop", "Dish", "1/2 Pint, Pint"],
+		id: 0,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍦",
+
+	},
+	{
+		name: "Chip Chocolate",
+		id: 1,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Peachy Peach",
+		id: 2,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍑",
+	},
+	{
+		name: "Chocolate Caramel Cherry",
+		id: 3,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍒"
+	},
+	{
+		name: "Rainbow Sherbert",
+		id: 4,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🌈",
+	},
+	{
+		name: "Cookie Dough",
+		id: 5,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Orange Pineapple",
+		id: 6,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "O'Charley's Caramel Pie",
+		id: 7,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Chocolate",
+		id: 8,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Strawberry",
+		id: 9,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Black Walnut",
+		id: 10,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Cookies & Cream",
+		id: 11,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Butter Pecan",
+		id: 12,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Cherry Vanilla",
+		id: 13,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Red Velvet Cake",
+		id: 14,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Chocolate Marshmallow Almond",
+		id: 15,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Sugarfree Vanilla ",
+		id: 16,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Sugarfree Butter Pecan",
+		id: 17,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	}]},
+	{ category: "Ice Cream 2", 
+	  items: [
+	{
+		name: "Vanilla",
+		// ingredients: ["Scoop", "Dish", "1/2 Pint, Pint"],
+		id: 0,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍦",
+
+	},
+	{
+		name: "Chip Chocolate",
+		id: 1,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Peachy Peach",
+		id: 2,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍑",
+	},
+	{
+		name: "Chocolate Caramel Cherry",
+		id: 3,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍒"
+	},
+	{
+		name: "Rainbow Sherbert",
+		id: 4,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🌈",
+	},
+	{
+		name: "Cookie Dough",
+		id: 5,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Orange Pineapple",
+		id: 6,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "O'Charley's Caramel Pie",
+		id: 7,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Chocolate",
+		id: 8,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Strawberry",
+		id: 9,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Black Walnut",
+		id: 10,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Cookies & Cream",
+		id: 11,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Butter Pecan",
+		id: 12,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Cherry Vanilla",
+		id: 13,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Red Velvet Cake",
+		id: 14,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Chocolate Marshmallow Almond",
+		id: 15,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Sugarfree Vanilla ",
+		id: 16,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Sugarfree Butter Pecan",
+		id: 17,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	}]},
+	{ category: "Not Ice Cream", 
+	  items: [
+	{
+		name: "Vanilla",
+		// ingredients: ["Scoop", "Dish", "1/2 Pint, Pint"],
+		id: 0,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍦",
+
+	},
+	{
+		name: "Chip Chocolate",
+		id: 1,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Peachy Peach",
+		id: 2,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍑",
+	},
+	{
+		name: "Chocolate Caramel Cherry",
+		id: 3,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍒"
+	},
+	{
+		name: "Rainbow Sherbert",
+		id: 4,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🌈",
+	},
+	{
+		name: "Cookie Dough",
+		id: 5,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Orange Pineapple",
+		id: 6,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "O'Charley's Caramel Pie",
+		id: 7,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Chocolate",
+		id: 8,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Strawberry",
+		id: 9,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Black Walnut",
+		id: 10,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Cookies & Cream",
+		id: 11,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "🍪",
+
+	},
+	{
+		name: "Butter Pecan",
+		id: 12,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Cherry Vanilla",
+		id: 13,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Red Velvet Cake",
+		id: 14,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Chocolate Marshmallow Almond",
+		id: 15,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Sugarfree Vanilla ",
+		id: 16,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	},
+	{
+		name: "Sugarfree Butter Pecan",
+		id: 17,
+		price: 1.10,
+		price1: 2.20,
+		price2: 2.20,
+		price3: 4.40,
+		emoji: "",
+
+	}]}]
+
+  function getMenuHtml() {
+	let menuHtml = "";
+	menuArray.forEach((menu) => {
+
+    let i = 1; //not wokring jjust yet
+    
+		menuHtml += `
+      <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapse${i}">
+            ${menu.category}
+          </a>
+        </div>`;
+
+      menu.items.forEach((item) => { 
+
+
+      menuHtml += `  
+
+      <div id="collapse${i}" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          <div class="menu-items" id="menu-items">
+            <span>${item.emoji}</span>
+            <div class="details">
+              <h3>${item.name} - <strong>$${item.price}</strong></div></h3>
+              <button class="add-btn" data-item="${item.id}">Scoop</button>
+               <button class="add-btn" data-item="${item.id}">Dish</button>
+              <button class="add-btn" data-item="${item.id}">1/2 Pint</button>
+              <button class="add-btn" data-item="${item.id}">Pint</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+      `;
+    })
+    i++; 
+	});
+  console.log(menuHtml); 
+	return menuHtml;
+}
+
+
+function renderMenu() {
+	document.getElementById("menu").innerHTML = getMenuHtml();
+}
+
+renderMenu();
+
+
+</script>
