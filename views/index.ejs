@@ -1,92 +1,62 @@
-<!DOCTYPE html>
 
-<html lang="html">
-
-<head>
-  <title>Trowbridges Mobile Order</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-</head>
-
+<h2>
+  <%=herokuVar %>
+</h2>
+<html>
 
 <body>
-  <!-- START TABS -->
-  <h1>🍦Trowbridge's Mobile Order - Place Your Order Below!🍦</h1>
 
-  <div class="tab_container">
-    <input id="tab1" type="radio" name="tabs" checked>
-    <label for="tab1"><span>Welcome</span></label> 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Schmidt's CRUD</a>
 
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a target="_blank" class="nav-link active"
+          href="https://github.com/lane30schmidt/quebec-486">Code Here!</a>
+      </li>
+      <li class="nav-item">
+        <a target="_blank" class="nav-link active"
+          href="https://gist.github.com/barrycumbie/978e0a8f517669733f61d44008e6924c">Quebec Story Card
+          Here!</a>
+      </li>
 
-    <input id="tab2" type="radio" name="tabs">
-    <label for="tab2"><span>Menu</span></label>
+    </ul>
+  </div>
+</nav>
 
-    <input id="tab3" type="radio" name="tabs">
-    <label for="tab3"><span>Order</span></label>
-    <!-- END TABS -->
+<h1>Hi there, welcome to the coolest most best CRUDDY db you ever did see</h1>
 
+<h3>Add a brand spanking new item</h3>
 
-    <body>
-      <!-- WELCOME PAGE-->
-      <%- include('partials/welcome') %>
-
-      <!-- MENU PAGE -->
-      <%- include('partials/menu') %>
-
-      <!-- START ORDER PAGE -->
-      <section id="content3" class="tab-content">
-        <div class="card">
-          <h2>Order Here:</h2>
-        
-        
-          <div class="menu" id="scoop"></div>
-
-        
-          <div class="order-completed-container" id="order-completed-container">
-            <div class="thankyou-screen" id="thankyou-screen"></div>
-          </div>
-        
-          <div class="order-total" id="order-total">
-            <h1>Your Order</h1>
-            <div class="total" id="total">
-            </div>
-            <h3 class="total-price" id="total-price"></h3>
-            <button id="complete-order-btn" class="complete-order-btn">Complete Order</button>
-          </div>
-        
-        
-          <div class="overlay">
-            <div class="modal hidden" id="modal">
-              <form action="#">
-                <div class="close-modal-btn-container">
-                  <button class="modal-close-btn" id="modal-close-btn">X</button>
-                </div>
-                <h2>Enter card details</h2>
-                <label for="name"></label>
-                <input id="name" name="name" type="text" placeholder="Enter your name" required>
-                <input id="email" name="Email" type="email" placeholder="janedoe@gmail.com" required>
-                <label for="cardNumber"></label>
-                <input type="number" id="cardNumber" placeholder="Enter your card number"
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  maxlength="9" required>
-                <label for="CVV"></label>
-                <input type="number" id="CVV" placeholder="Enter CVV"
-                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                  maxlength="3" required>
-                <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END ORDER PAGE-->
+<form method="POST" action="/addDrink">
+  <label for="drink_name">ITEM: </label>
+  <input name="drink_name" value="brand spanking new item">
+  <br>
+  <label for="size">PRICE: </label>
+  <input name="size" value="a milly">
+  <br>
+  <input type="submit" value="Create" />
+</form>
 
 
-          <!-- START FOOTER -->
-          <%- include('partials/footer') %>
-            <%- include('partials/scripts') %>
+<h3>Update them thangs</h3>
+<% for (var i=0; i< drinkData.length; i++ ) { %>
+  <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+    <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+        <input type="submit" value="Update">
+  </form>
+  <br />
+  <% } %>
 
-    </body>
+    <h3>Delete them thangs</h3>
+    <% for (var i=0; i< drinkData.length; i++ ) { %>
+      <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+        <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+            <input type="submit" value="Delete">
+      </form>
+      <br />
+      <% } %>
+        </body>
 
 </html>

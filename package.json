@@ -1,8 +1,8 @@
 {
   "name": "quebec-486",
   "version": "1.0.0",
-  "description": "![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon run app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lane30schmidt/quebec-486.git"
+    "url": "https://github.com/lane30schmidt/quebec-486"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,5 @@
     "express": "^4.18.2",
     "mongodb": "^4.14.0",
     "nodemon": "^2.0.21"
-  },
-  "devDependencies": {}
+  }
 }
