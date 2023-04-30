@@ -1,4 +1,7 @@
 # 🍦 Trowbridge's Mobile Order App 🍦
+
+![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)
+
 # Story Card :clipboard: <br>
 __As a__
 Hungry customer :smirk: <br>
@@ -14,6 +17,7 @@ Delete something from your order <br>
 Send order summary to an email (the restaurant/customer) <br>
 Build your own order (based on available ingredients) <br>
 Will have calculating functions <br>
+![Image](https://user-images.githubusercontent.com/111913185/229928332-0c89718c-b867-4afb-87bf-db7a63f6d116.png)
 
 # Need to Do / Issues :wave: <br>
 __Create a__
@@ -45,5 +49,4 @@ Add to this repo secret variable (Settings>Secrets and Variables>Actions>Variabl
 MONGO_URI = mongodb+srv://lschmidt:y0bLuTb1EZCYw9fg@cluster0.8khag9y.mongodb.net/?retryWrites=true&w=majority
 
 ![image](https://user-images.githubusercontent.com/111534250/229915087-db9a3007-c199-45e3-80c8-365cfb8ce613.png)
-
-![image](https://user-images.githubusercontent.com/111534190/229919655-c6547acf-d411-42ec-a4fc-0bcad48be6d1.jpg)
+  
