@@ -9,6 +9,9 @@ section {
   background: #D9F0FF ;
 }
 
+
+
+
 .card{
   background: #D9F0FF ;
   border-width: 0.2cm;
@@ -45,25 +48,7 @@ label {
 }
 
 
-h1 {
-  color: rgb(46, 15, 15);
-  font-family: 'Playball', cursive;
-  text-align: center;
-}
-
-h2 {
-  color: rgb(46, 15, 15);
-  font-family: 'Playball', cursive;
-  text-align: center;
-}
-
-h3 { 
-  color: rgb(46, 15, 15);
-  font-family: 'Playball', cursive;
-  text-align: center;
-}
-
-h4 {
+h1, h2, h3, h4 {
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
   text-align: center;
@@ -82,7 +67,7 @@ h6 {
 }
 
 
- .footer-card {
+.footer-card {
   margin: auto;
   text-align: center;
   display: inline-block;
@@ -95,19 +80,12 @@ h6 {
 .tab_container{
   background: #7681B3 ;
 }
+
 /* These hide the radio buttons */
-
-#tab1 {
+#tab1, #tab2, #tab3 {
   display: none;
 }
 
-#tab2 {
-  display: none;
-}
-
-#tab3 {
-  display: none;
-}
 
 html{
   background: #D9F0FF;;
@@ -116,52 +94,24 @@ html{
 body{
   margin: 0;
   padding: 0;
+  background-color: #7681B3;
 }    
 
 body,button {
   font-family: 'Smythe', cursive;
 }
 
-/* .text-container {
-position: absolute;
-top: 1em;
-color: D9F0FF;
-margin-left: 1em;
-} */
-
-/* layout */
-
-main,header {
-width: 80%;
-margin: 0 auto;
-background: #D9F0FF;
-text-align: center;
-margin-top: 20px;
-}
 
 /* menu */
 .menu {
   display:flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 110%;
+  width: 100%;
   margin-top: 20px;
 }
 
-/* .menu-items {
-display: flex;
-align-items: center;
-flex-direction: row;
-width: 100%;
-border-bottom: 1px solid #D9F0FF;
-margin-bottom: 0.5em;
-} */
 
-/* .menu-items>span {
-font-size: 4rem;
-margin-right: 0.5em;
-margin-left: 0.5em;
-} */
 
 .details {
   width: 30%;
@@ -182,8 +132,7 @@ background: #F0F9FF;
 display: inline-block;
 }
 
-.add-btn:active,
-.add-btn:hover {
+.add-btn:active, .add-btn:hover {
   cursor: pointer;
   background-color: lightgrey;
   box-shadow: 0 0px;
@@ -192,14 +141,12 @@ display: inline-block;
 
 
 
-/* Order Cart Screen
-*/
-
+/* Order Cart Screen */
 
 div#order-total {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 .order-items,.total-price {
@@ -210,12 +157,10 @@ align-items: center;
 
 h3#total-price {
     width: 100%;
-
 }
 
 .order-items,.item-row{
 height: 100px;
-/* margin:0.5em; */
 font-size: large;
 
 }
@@ -224,14 +169,11 @@ div#order-items {
     display: flex;
     width: 100%;
     font-size: large;
-
-
 }
 
 .total-price{
-border-top: 2px solid #D2D2D2;
-padding: 1em;
-  
+  border-top: 2px solid #D2D2D2;
+  padding: 1em;
 }
 
 .item-row{
@@ -256,7 +198,6 @@ font-size: 1.3rem;
 font-size: large;
 
 }
-
 
 
 .complete-order-btn {
@@ -298,7 +239,7 @@ form {
   max-width: 90%;
   margin: auto;
   width: 524px;
-  height: 542.24px;
+  height: 750px;
   border-radius: 7px;
   box-shadow: 0px 0px 6px 2px #666;
   background-color: white;

@@ -32,7 +32,7 @@ Design of our web page needs the following: <br>
 - [ ] Add Items to the cart <br>
 - [ ] Remove Items from the cart <br>
 - [ ] Add Item totals <br>
-- [ ] Tax (5%) <br>
+- [ ] Tax (9%) <br>
 - [ ] Show cart contents and totals <br>
 - [ ] Enter customer info to place an order <br>
 - [ ] Submit or cancel <br>
