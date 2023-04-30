@@ -8,39 +8,35 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Schmidt's CRUD</a>
+    <a class="navbar-brand">🍦Trowbridge's Mobile Order🍦</a>
 
     <ul class="navbar-nav">
       <li class="nav-item">
         <a target="_blank" class="nav-link active"
-          href="https://github.com/lane30schmidt/quebec-486">Code Here!</a>
+          href="https://github.com/nicolereilly/mobile-ordering">Code Here!</a>
       </li>
-      <li class="nav-item">
-        <a target="_blank" class="nav-link active"
-          href="https://gist.github.com/barrycumbie/978e0a8f517669733f61d44008e6924c">Quebec Story Card
-          Here!</a>
-      </li>
+      
 
     </ul>
   </div>
 </nav>
 
-<h1>Hi there, welcome to the coolest most best CRUDDY db you ever did see</h1>
+<h1>Hi there, welcome to Trowbridge's mobile ordering system. Place your order down below!</h1>
 
-<h3>Add a brand spanking new item</h3>
+<h3>Start order below:</h3>
 
 <form method="POST" action="/addDrink">
-  <label for="drink_name">ITEM: </label>
-  <input name="drink_name" value="brand spanking new item">
+  <label for="drink_name">Flavor: </label>
+  <input name="drink_name" value="vanilla">
   <br>
   <label for="size">PRICE: </label>
-  <input name="size" value="a milly">
+  <input name="size" value="$2.99">
   <br>
   <input type="submit" value="Create" />
 </form>
 
 
-<h3>Update them thangs</h3>
+<h3>Update your items</h3>
 <% for (var i=0; i< drinkData.length; i++ ) { %>
   <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
     <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
@@ -49,7 +45,7 @@
   <br />
   <% } %>
 
-    <h3>Delete them thangs</h3>
+    <h3>Delete your items</h3>
     <% for (var i=0; i< drinkData.length; i++ ) { %>
       <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
         <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
