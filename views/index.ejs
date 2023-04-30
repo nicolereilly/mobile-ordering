@@ -26,75 +26,64 @@
     <label for="tab3"><span>Order</span></label>
     <!-- END TABS -->
 
-    <!--START NAV BAR -->
-    <nav class="navbar navbar-expand-sm bg-light">
-      <a class="navbar-brand" href="#"></a>
-    </nav>
-    <!--END NAV BAR -->
 
     <body>
       <!-- WELCOME PAGE-->
       <%- include('partials/welcome') %>
 
-        <!-- MENU PAGE -->
-        <%- include('partials/menu') %>
+      <!-- MENU PAGE -->
+      <%- include('partials/menu') %>
 
-          <!-- START ORDER PAGE -->
-          <section id="content3" class="tab-content">
-            <h2>Order Here:</h2>
-
-
-              <div class="menu" id="scoop"></div>
-
-
-
-
-
-
-            <br>
-
-            <div class="order-completed-container" id="order-completed-container">
-              <div class="thankyou-screen" id="thankyou-screen"></div>
-            </div>
-
-            <div class="order-total" id="order-total">
-              <h1>Your Order</h1>
-              <div class="total" id="total">
-              </div>
-              <h3 class="total-price" id="total-price"></h3>
-              <button id="complete-order-btn" class="complete-order-btn">Complete Order</button>
-            </div>
-
-
-            <div class="overlay">
-              <div class="modal hidden" id="modal">
-                <form method="post" action="/gmail">
-                  <div class="close-modal-btn-container">
-                    <button class="modal-close-btn" id="modal-close-btn">X</button>
-                  </div>
-                  <h2>Enter card details</h2>
-                  <label for="name"></label>
-                  <input id="name" name="name" type="text" value="Enter your name" required>
-                  <input id="email" name="email" type="email" value="janedoe@gmail.com" required>
-                  <label for="cardNumber"></label>
-                  <input type="number" id="cardNumber" placeholder="Enter your card number"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    maxlength="9" required>
-                  <label for="CVV"></label>
-                  <input type="number" id="CVV" placeholder="Enter CVV"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                    maxlength="3" required>
-                  <!-- <button type="submit" class="pay-btn" id="pay-btn">Pay</button> -->
-                  <input type="submit" class="pay-btn" value="PAYYYY"> 
-                </form>
-              </div>
-            </div>
-
-          </section>
-          <!-- END ORDER PAGE-->
-
+      <!-- START ORDER PAGE -->
+      <section id="content3" class="tab-content">
+        <div class="card">
+          <h2>Order Here:</h2>
+        
+        
+          <div class="menu" id="scoop"></div>
 
         
+          <div class="order-completed-container" id="order-completed-container">
+            <div class="thankyou-screen" id="thankyou-screen"></div>
+          </div>
+        
+          <div class="order-total" id="order-total">
+            <h1>Your Order</h1>
+            <div class="total" id="total">
+            </div>
+            <h3 class="total-price" id="total-price"></h3>
+            <button id="complete-order-btn" class="complete-order-btn">Complete Order</button>
+          </div>
+        
+        
+          <div class="overlay">
+            <div class="modal hidden" id="modal">
+              <form method="post" action="/gmail">
+                <div class="close-modal-btn-container">
+                  <button class="modal-close-btn" id="modal-close-btn">X</button>
+                </div>
+                <h2>Enter card details</h2>
+                <label for="name"></label>
+                <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                <input id="email" name="Email" type="email" placeholder="email@gmail.com" required>
+                <label for="cardNumber"></label>
+                <input type="number" id="cardNumber" placeholder="Enter your card number"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="9" required>
+                <label for="CVV"></label>
+                <input type="number" id="CVV" placeholder="Enter CVV"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  maxlength="3" required>
+                <!-- <button type="submit" class="pay-btn" id="pay-btn">Pay</button> -->
+                <input type="submit" class="pay-btn" value="PAY">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END ORDER PAGE-->
+
+
           <!-- START FOOTER -->
           <%- include('partials/footer') %>
             <%- include('partials/scripts') %>

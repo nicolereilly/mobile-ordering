@@ -12,8 +12,6 @@ const nodemailer = require('nodemailer')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
 let someVar = "";
 
@@ -120,6 +118,8 @@ app.post('/deleteDrink/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running & listening on port ${PORT}`);
 });
+
+
 
 
 app.post('/gmail', (req, res) => {
