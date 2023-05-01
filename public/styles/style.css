@@ -3,16 +3,17 @@
 
 body {
   font-family: sans-serif;
-  background: #f6f9fa;
+  background: #D3F9DD ;
 }
 
 h1 {
-  color: #ccc;
+  color: #020000;
   text-align: center;
+  
 }
 
 a {
-  color: #ccc;
+  color: #0a0505;
   text-decoration: none;
   outline: none;
 }
@@ -26,8 +27,8 @@ a {
   padding-top: auto;
   position: auto;
   clear: both;
+  
 }
-
 
 
 /*Clears contents when you change tabs*/
@@ -35,6 +36,7 @@ section {
   clear: both;
   display: none;
   position: center;
+  
 }
 
 label {
@@ -49,7 +51,7 @@ label {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: #f0f0f0;
+  background: #D3F9DD 
 }
 
 #tab1:checked~#content1,
@@ -59,9 +61,9 @@ label {
 #tab5:checked~#content5 {
   display: block;
   padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
+  background: #D3F9DD ;
+  color: #0c0808;
+  border-bottom: 2px solid #D3F9DD ;
 }
 
 .tab_container .tab-content p,
@@ -73,11 +75,13 @@ label {
 
 .tab_container .tab-content h3 {
   text-align: center;
+  background: #D3F9DD;
 }
 
 .tab_container [id^="tab"]:checked+label {
-  background: #fff;
-  box-shadow: inset 0 3px rgb(0, 0, 0);
+  background:#F9D3F7
+  ;
+  box-shadow: inset 0 3px #F9D3F7;
 }
 
 .tab_container [id^="tab"]:checked+label .fa {
@@ -125,7 +129,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3 { 
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
   text-align: left;
@@ -151,47 +155,56 @@ h6 {
 
 .menu-card {
   display: inline-block;
-  width: 228px;
+  width: 80%;
   height: auto;
-  border: 2px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: 3px solid #f9d3f7;
   font-size: small;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background: #f9d3f7;
 
 }
 
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
+
 
 .icecream-card {
   display: inline-block;
-  width: 1170px;
+  width: 80%;
   height: auto;
-  border: 2px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: 3px solid #D3F9DD;
   font-size: small;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background:#f9d3f7;
 }
 
 .flavor-card {
   display: inline-block;
-  width: 385px;
+  width: 80%;
   height: auto;
-  border: 2px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
+  border: 3px solid #D3F9DD;
   font-size: small;
-  padding-top: 5px;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  background:#f9d3f7;
 }
 
+.size-card {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  border: 3px solid ;
+  font-size: small;
+  margin:0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 
+} 
 
-/*TEST CART */
+/* CART */
 .checkout {
   background: #00d1f1;
   color: white;
@@ -199,17 +212,12 @@ hr.rounded {
   margin: 15px auto;
   border: none;
   cursor: pointer;
-  width: 30%;
+  width: auto;
   border-radius: 8px;
   display: block;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.product {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $color-border;
-}
 
 /* Apply dollar signs */
 .product .product-price:before, .product .product-line-price:before, .totals-value:before {
@@ -220,36 +228,21 @@ hr.rounded {
   color:white;
 }
 
-.product-quantity {
-  input {
-    width: 60px;
-  }
+.product{
+  padding-left: 20px;
+  display: inline-flex;  
 }
 
+/* Total Card */
+.totals{
+  background:#D3ECF9;
 
-.ordericecream-card {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  border: 3px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: small;
-  padding-top: 5px;
 }
 
-.ordersandwiches-card {
-  display: inline-block;
-  width: auto;
-  height: auto;
-  border: 3px solid #000000;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: small;
-  padding-top: 5px;
+.product{
+  background: #f9d3f7;
 }
 
-/* Checkkout button */
 
 
 .footer-card {
@@ -258,5 +251,37 @@ hr.rounded {
   display: inline-block;
   align-self: last baseline;
   padding-left: 50px;
+  background:#9c7e07;
 }
 
+/* These hide the radio buttons */
+
+#tab1 {
+  display: none;
+}
+
+#tab2 {
+  display: none;
+}
+
+#tab3 {
+  display: none;
+}
+
+#shoppingCart {
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  width: 300px; 
+}
+
+#spacer { 
+  width: 250px; 
+}
+
+
+
+input[type='number']{
+  width: 80px;
+}
