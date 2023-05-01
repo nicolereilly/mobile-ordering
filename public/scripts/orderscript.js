@@ -75,3 +75,5 @@ function removeItem(removeButton)
     recalculateCart();
   });
 }
+
+// Check out button
