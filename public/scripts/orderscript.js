@@ -1,251 +1,223 @@
-/* Set rates + misc */
-var taxRate = 0.09;
-var shippingRate = 0; 
-var fadeTime = 300;
+const menuArray = [
+	{
+		name: "Vanilla",
+		id: 0,
+		price: 1.10,
+	},
+	{
+		name: "Chip Chocolate",
+		id: 1,
+		price: 1.10
+	},
+	{
+		name: "Peachy Peach",
+		id: 2,
+		price: 1.10
+	},
+	{
+		name: "Chocolate Caramel Cherry",
+		id: 3,
+		price: 1.10
+	},
+	{
+		name: "Rainbow Sherbert",
+		id: 4,
+		price: 1.10
+	},
+	{
+		name: "Cookie Dough",
+		id: 5,
+		price: 1.10
+	},
+	{
+		name: "Orange Pineapple",
+		id: 6,
+		price: 1.10
+	},
+	{
+		name: "O'Charley's Caramel Pie",
+		id: 7,
+		price: 1.10
+	},
+	{
+		name: "Chocolate",
+		id: 8,
+		price: 1.10
+	},
+	{
+		name: "Strawberry",
+		id: 9,
+		price: 1.10
+	},
+	{
+		name: "Black Walnut",
+		id: 10,
+		price: 1.10
+	},
+	{
+		name: "Cookies & Cream",
+		id: 11,
+		price: 1.10
+	},
+	{
+		name: "Butter Pecan",
+		id: 12,
+		price: 1.10
+	},
+	{
+		name: "Cherry Vanilla",
+		id: 13,
+		price: 1.10
+	},
+	{
+		name: "Red Velvet Cake",
+		id: 14,
+		price: 1.10
+	},
+	{
+		name: "Chocolate Marshmallow Almond",
+		id: 15,
+		price: 1.10
+	},
+	{
+		name: "Sugarfree Vanilla",
+		id: 16,
+		price: 1.10
+	},
+	{
+		name: "Sugarfree Butter Pecan",
+		id: 17,
+		price: 1.10
+	},
+]
 
 
-/* Assign actions */
-$('.product-quantity input').change( function() {
-  updateQuantity(this);
-  console.log(this)
-});
+let orderedItems = [];
 
-$('.product-removal button').click( function() {
-  removeItem(this);
-});
-
-
-/* Recalculate cart */
-function recalculateCart()
-{
-  var subtotal = 0;
-  
-  /* Sum up row totals */
-  $('.product').each(function () {
-    subtotal += parseFloat($(this).children('.product-line-price').text());
-  });
-  
-  /* Calculate totals */
-  var tax = subtotal * taxRate;
-  var shipping = (subtotal > 0 ? shippingRate : 0);
-  var total = subtotal + tax + shipping;
-  
-  /* Update totals display */
-  $('.totals-value').fadeOut(fadeTime, function() {
-    $('#cart-subtotal').html(subtotal.toFixed(2));
-    $('#cart-tax').html(tax.toFixed(2));
-    $('#cart-shipping').html(shipping.toFixed(2));
-    $('#cart-total').html(total.toFixed(2));
-    if(total == 0){
-      $('.checkout').fadeOut(fadeTime);
-    }else{
-      $('.checkout').fadeIn(fadeTime);
-    }
-    $('.totals-value').fadeIn(fadeTime);
-  });
+function getMenuHtml() {
+	let menuHtml = "";
+	menuArray.forEach((menu) => {
+		menuHtml += `
+      <div class="menu-items" id="menu-items">
+      <button class="add-btn" data-item="${menu.id}">${menu.name}</button>
+      </div>`;
+	});
+	return menuHtml;
 }
 
-
-/* Update quantity */
-function updateQuantity(quantityInput)
-{
-  /* Calculate line price */
-  var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children('.product-price').text());
-  var quantity = $(quantityInput).val();
-  var linePrice = price * quantity;
-  
-  /* Update line price display and recalc cart totals */
-  productRow.children('.product-line-price').each(function () {
-    $(this).fadeOut(fadeTime, function() {
-      $(this).text(linePrice.toFixed(2));
-      recalculateCart();
-      $(this).fadeIn(fadeTime);
-    });
-  });  
-}
-
-
-/* Remove item from cart */
-function removeItem(removeButton)
-{
-  /* Remove row from DOM and recalc cart total */
-  var productRow = $(removeButton).parent().parent();
-  productRow.slideUp(fadeTime, function() {
-    productRow.remove();
-    recalculateCart();
-  });
-}
-
-// Check out button
-
-
-
-
-
-// background
-Matter.use('matter-wrap');
-
-let floatyBubbles = {
-	// customizable options (passed into init function)
-    options: {
-		canvasSelector: '',				// to find <canvas> in DOM to draw on
-		radiusRange: [50, 100],			// random range of body radii
-		xVarianceRange: [-0.5, 0.5],	// random range of x velocity scaling on bodies
-		yVarianceRange: [0.5, 1.5],		// random range of y velocity scaling on bodies
-		airFriction: 0.03,				// air friction of bodies
-		opacity: 1,						// opacity of bodies
-		collisions: true,				// do bodies collide or pass through
-		scrollVelocity: 0.025,			// scaling of scroll delta to velocity applied to bodies
-		pixelsPerBody: 50000,			// viewport pixels required for each body added
-
-		// colors to cycle through to fill bodies
-		colors: ['#e4e4cc', '#e1d2c4', '#d1e4df']
-	},
-
-	// throttling intervals (in ms)
-	scrollDelay: 100,
-	resizeDelay: 400,
-
-	// throttling variables and timeouts
-	lastOffset: undefined,
-	scrollTimeout: undefined,
-	resizeTimeout: undefined,
-
-	// Matter.js objects
-	engine: undefined,
-	render: undefined,
-	runner: undefined,
-	bodies: undefined,
-
-	// kicks things off
-	init(options) {
-		// override default options with incoming options
-		this.options = Object.assign({}, this.options, options);
-
-		let viewportWidth = document.documentElement.clientWidth;
-		let viewportHeight = document.documentElement.clientHeight;
-
-		this.lastOffset = window.pageYOffset;
-		this.scrollTimeout = null;
-		this.resizeTimeout = null;
-	
-		// engine
-		this.engine = Matter.Engine.create();
-		this.engine.world.gravity.y = 0;
-	
-		// render
-		this.render = Matter.Render.create({
-			canvas: document.querySelector(this.options.canvasSelector),
-			engine: this.engine,
-			options: {
-				width: viewportWidth,
-				height: viewportHeight,
-				wireframes: false,
-				background: 'transparent'
-			}
-		});
-		Matter.Render.run(this.render);
-	
-		// runner
-		this.runner = Matter.Runner.create();
-		Matter.Runner.run(this.runner, this.engine);
-	
-		// bodies
-		this.bodies = [];
-		let totalBodies = Math.round(viewportWidth * viewportHeight / this.options.pixelsPerBody);
-		for (let i = 0; i <= totalBodies; i++) {
-			let body = this.createBody(viewportWidth, viewportHeight);
-			this.bodies.push(body);
-		}
-		Matter.World.add(this.engine.world, this.bodies);
-
-		// events
-		window.addEventListener('scroll', this.onScrollThrottled.bind(this));
-		window.addEventListener('resize', this.onResizeThrottled.bind(this));
-	},
-	
-	// stop all the things
-	shutdown() {
-		Matter.Engine.clear(this.engine);
-		Matter.Render.stop(this.render);
-		Matter.Runner.stop(this.runner);
-
-		window.removeEventListener('scroll', this.onScrollThrottled);
-		window.removeEventListener('resize', this.onResizeThrottled);
-	},
-	
-	// random number generator
-	randomize(range) {
-		let [min, max] = range;
-		return Math.random() * (max - min) + min;
-	},
-	
-	// create body with some random parameters
-	createBody(viewportWidth, viewportHeight) {
-		let x = this.randomize([0, viewportWidth]);
-		let y = this.randomize([0, viewportHeight]);
-		let radius = this.randomize(this.options.radiusRange);
-		let color = this.options.colors[this.bodies.length % this.options.colors.length];
-	
-		return Matter.Bodies.circle(x, y, radius, {
-			render: {
-				fillStyle: color,
-				opacity: this.options.opacity
-			},
-			frictionAir: this.options.airFriction,
-			collisionFilter: {
-				group: this.options.collisions ? 1 : -1
-			},
-			plugin: {
-				wrap: {
-					min: { x: 0, y: 0 },
-					max: { x: viewportWidth, y: viewportHeight }
-				}
-			}
-		});
-	},
-	
-	// enforces throttling of scroll handler
-	onScrollThrottled() {
-		if (!this.scrollTimeout) {
-			this.scrollTimeout = setTimeout(this.onScroll.bind(this), this.scrollDelay);
-		}
-	},
-	
-	// applies velocity to bodies based on scrolling with some randomness
-	onScroll() {
-		this.scrollTimeout = null;
-
-		let delta = (this.lastOffset - window.pageYOffset) * this.options.scrollVelocity;
-		this.bodies.forEach((body) => {
-			Matter.Body.setVelocity(body, {
-				x: body.velocity.x + delta * this.randomize(this.options.xVarianceRange),
-				y: body.velocity.y + delta * this.randomize(this.options.yVarianceRange)
-			});
-		});
-	
-		this.lastOffset = window.pageYOffset;
-	},
-	
-	// enforces throttling of resize handler
-	onResizeThrottled() {
-		if (!this.resizeTimeout) {
-			this.resizeTimeout = setTimeout(this.onResize.bind(this), this.resizeDelay);
-		}
-	},
-	
-	// restart everything with the new viewport size
-	onResize() {
-		this.shutdown();
-		this.init();
+document.addEventListener("click", (e) => {
+	document.getElementById("order-total").classList.remove("hidden");
+	if (e.target.dataset.item) {
+		addItems(e.target.dataset.item);
+	} else if (e.target.dataset.indexNumber) {
+		removeItems(e.target.dataset.indexNumber);
+	} else if (e.target.id === "complete-order-btn") {
+		completeOrder();
+	} else if (e.target.id === "modal-close-btn") {
+		closeModal();
+	} else if (e.target.id === "pay-btn") {
+		renderThankScreen(e);
+		closeModal()
 	}
-};
-
-// wait for DOM to load
-window.addEventListener('DOMContentLoaded', () => {
-	// start floaty bubbles background
-	Object.create(floatyBubbles).init({
-        canvasSelector: '#bg'
-    });
+	console.log(e.target.dataset.indexNumber)
 });
+
+
+function addItems(itemId) {
+	document.getElementById("order-total").style.display = "flex";
+
+
+	// classList.remove("hidden");
+
+	const targetItem = menuArray.filter((item) => {
+		return item.id == itemId;
+	})[0];
+	orderedItems.push(targetItem);
+	renderOrderedItems();
+	renderTotal();
+}
+
+function removeItems(index) {
+	orderedItems.splice(index, 1)
+	renderOrderedItems();
+	renderTotal();
+}
+
+function renderThankScreen(e) {
+	e.preventDefault()
+
+	const el = document.getElementById('order-total')
+	el.remove()
+
+	const payerName = document.getElementById("name").value
+	const payerEmail = document.getElementById("email").value
+
+	document.getElementById("thankyou-screen").innerHTML = `<h1>Thanks, ${payerName}! Your order is on its way! Check your email at ${payerEmail} to check on its status! Please refresh your homepage to go back to the ordering screen </h1>
+  `
+}
+
+function renderOrderedItems() {
+	const html = orderedItems.map((item, index) => {
+		return `
+    <div id="order-items" class="order-items">
+     <div class="item-row">
+    <h4>${item.name}</h4>
+    <button data-remove="remove" data-index-number="${index}" class="remove-btn">Remove</button>
+     </div>
+    <p data-price="price">$${item.price}</p>
+    </div>`;
+	});
+	document.getElementById("total").innerHTML = html.join("");
+}
+
+function renderTotal() {
+	const itemPrices = orderedItems.map((item) => item.price);
+	const totalPrice = itemPrices.reduce((a, b) => a + b, 0).toFixed(2);
+	document.getElementById(
+		"total-price"
+	//let totalPrice = num.toFixed(2);
+	).innerHTML = `Total Price: <span>$${totalPrice}</span>`;
+}
+
+function renderMenu() {
+	document.getElementById("scoop").innerHTML = getMenuHtml();
+}
+
+renderMenu();
+
+// Modal Function
+const modal = document.getElementById("modal")
+const overlay = document.querySelector(".overlay")
+
+function closeModal() {
+	modal.style.display = "none"
+	modal.classList.remove("visible")
+	modal.classList.add("hidden")
+	overlay.style.display = "none"
+}
+
+function completeOrder() {
+	modal.style.display = "block"
+	modal.classList.remove("hidden")
+	modal.classList.add("visible")
+	overlay.style.display = "block"
+}
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function () {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+			panel.style.display = "none";
+		} else {
+			panel.style.display = "block";
+		}
+	});
+}

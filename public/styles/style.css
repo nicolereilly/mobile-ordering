@@ -1,44 +1,23 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
-body {
-  font-family: sans-serif;
-  background: #D3F9DD ;
-}
-
-h1 {
-  color: #020000;
-  text-align: center;
-  
-}
-
-a {
-  color: #0a0505;
-  text-decoration: none;
-  outline: none;
-}
-
-
-
-/*Tabs*/
-.tab_container {
-  width: auto;
-  margin: auto;
-  padding-top: auto;
-  position: auto;
-  clear: both;
-  
-}
-
-
 /*Clears contents when you change tabs*/
 section {
   clear: both;
   display: none;
   position: center;
-  
+  background: #D9F0FF ;
 }
 
+.card{
+  background: #D9F0FF ;
+  border-width: 0.2cm;
+}
+.card-body{
+  position: center;
+  text-align: center;
+}
+/* Styles for tabs */
 label {
   font-weight: 700;
   font-size: 18px;
@@ -51,9 +30,8 @@ label {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: #D3F9DD 
 }
-
+/* displays content */
 #tab1:checked~#content1,
 #tab2:checked~#content2,
 #tab3:checked~#content3,
@@ -61,61 +39,11 @@ label {
 #tab5:checked~#content5 {
   display: block;
   padding: 20px;
-  background: #D3F9DD ;
+  background: #D9F0FF ;
   color: #0c0808;
-  border-bottom: 2px solid #D3F9DD ;
+  border-bottom: 2px solid #D9F0FF ;
 }
 
-.tab_container .tab-content p,
-.tab_container .tab-content h3 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-
-.tab_container .tab-content h3 {
-  text-align: center;
-  background: #D3F9DD;
-}
-
-.tab_container [id^="tab"]:checked+label {
-  background:#F9D3F7
-  ;
-  box-shadow: inset 0 3px #F9D3F7;
-}
-
-.tab_container [id^="tab"]:checked+label .fa {
-  color: rgb(0, 0, 0);
-}
-
-label .fa {
-  font-size: 2em;
-  margin: 0 0.4em 0 0;
-}
-
-/*Media query*/
-@media only screen and (max-width: 900px) {
-  label span {
-    display: none;
-  }
-
-  .tab_container {
-    width: 150%;
-  }
-}
-
-/*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 h1 {
   color: rgb(46, 15, 15);
@@ -132,7 +60,7 @@ h2 {
 h3 { 
   color: rgb(46, 15, 15);
   font-family: 'Playball', cursive;
-  text-align: left;
+  text-align: center;
 }
 
 h4 {
@@ -153,107 +81,20 @@ h6 {
   text-align: right;
 }
 
-.menu-card {
-  display: inline-block;
-  width: 80%;
-  height: auto;
-  border: 3px solid #f9d3f7;
-  font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  background: #f9d3f7;
 
-}
-
-
-
-.icecream-card {
-  display: inline-block;
-  width: 80%;
-  height: auto;
-  border: 3px solid #D3F9DD;
-  font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  background:#f9d3f7;
-}
-
-.flavor-card {
-  display: inline-block;
-  width: 80%;
-  height: auto;
-  border: 3px solid #D3F9DD;
-  font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  background:#f9d3f7;
-}
-
-.size-card {
-  display: inline-block;
-  width: 80%;
-  height: auto;
-  border: 3px solid ;
-  font-size: small;
-  margin:0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-
-} 
-
-/* CART */
-.checkout {
-  background: #00d1f1;
-  color: white;
-  padding: 16px 25px;
-  margin: 15px auto;
-  border: none;
-  cursor: pointer;
-  width: auto;
-  border-radius: 8px;
-  display: block;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-
-/* Apply dollar signs */
-.product .product-price:before, .product .product-line-price:before, .totals-value:before {
-  content: '$';
-}
-
-.product-line-price{
-  color:white;
-}
-
-.product{
-  padding-left: 20px;
-  display: inline-flex;  
-}
-
-/* Total Card */
-.totals{
-  background:#D3ECF9;
-
-}
-
-.product{
-  background: #f9d3f7;
-}
-
-
-
-.footer-card {
+ .footer-card {
   margin: auto;
   text-align: center;
   display: inline-block;
   align-self: last baseline;
   padding-left: 50px;
-  background:#9c7e07;
-}
+  background:#D9F0FF;
+  padding-left: 10%;
+} 
 
+.tab_container{
+  background: #7681B3 ;
+}
 /* These hide the radio buttons */
 
 #tab1 {
@@ -268,20 +109,275 @@ h6 {
   display: none;
 }
 
-#shoppingCart {
-  z-index: 1;
+html{
+  background: #D9F0FF;;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}    
+
+body,button {
+  font-family: 'Smythe', cursive;
+}
+
+/* .text-container {
+position: absolute;
+top: 1em;
+color: D9F0FF;
+margin-left: 1em;
+} */
+
+/* layout */
+
+main,header {
+width: 80%;
+margin: 0 auto;
+background: #D9F0FF;
+text-align: center;
+margin-top: 20px;
+}
+
+/* menu */
+.menu {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 110%;
+  margin-top: 20px;
+}
+
+/* .menu-items {
+display: flex;
+align-items: center;
+flex-direction: row;
+width: 100%;
+border-bottom: 1px solid #D9F0FF;
+margin-bottom: 0.5em;
+} */
+
+/* .menu-items>span {
+font-size: 4rem;
+margin-right: 0.5em;
+margin-left: 0.5em;
+} */
+
+.details {
+  width: 30%;
+  font-size: x-large;
+}
+
+.add-btn{
+border: 0.5px solid D9F0FF;
+width: 200px;
+height: 50px;
+border-radius: 50%;
+box-shadow: 0 1.5px #666;
+font-size: 0.8em;
+font-weight: bold;  
+cursor: pointer;
+margin-right: 0.3em;  
+background: #F0F9FF;
+display: inline-block;
+}
+
+.add-btn:active,
+.add-btn:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  box-shadow: 0 0px;
+  transform: translateY(1px);
+}
+
+
+
+/* Order Cart Screen
+*/
+
+
+div#order-total {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-items,.total-price {
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+
+h3#total-price {
+    width: 100%;
+
+}
+
+.order-items,.item-row{
+height: 100px;
+/* margin:0.5em; */
+font-size: large;
+
+}
+
+div#order-items {
+    display: flex;
+    width: 100%;
+    font-size: large;
+
+
+}
+
+.total-price{
+border-top: 2px solid #D2D2D2;
+padding: 1em;
+  
+}
+
+.item-row{
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.remove-btn {
+width: 200px;
+/* height: 20px; */
+margin: 5.5em; 
+border: 1px solid #D2D2D2;
+background: none;
+color: #FF5A5F;
+cursor: pointer;
+}
+
+.order-total,.remove-btn {
+text-align: center;
+font-size: 1.3rem;
+font-size: large;
+
+}
+
+
+
+.complete-order-btn {
+width: 508px;
+height: 60px;
+border-radius: 5px;  
+font-size: 1.5rem;
+border: none;
+background: #bbe5f1;
+cursor: pointer;
+margin-bottom: 1em;
+}
+
+/* modal */
+.overlay {
+justify-content: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 200vw;
+height: 150vh;
+background-color: #D9F0FF; 
+display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal {
+  display: block;
   position: fixed;
+  top: 0;
+  bottom: 0;
   right: 0;
-  top: 200px;
-  width: 300px; 
+  left: 0;
+  max-width: 90%;
+  margin: auto;
+  width: 524px;
+  height: 542.24px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 6px 2px #666;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
 }
 
-#spacer { 
-  width: 250px; 
+.modal-inner{
+  width: 290px;
+  margin: 0 auto;
 }
 
+input {
+text-align: left;
+width: 475.91px;
+height: 71.3px;
+margin: 0.5em;
+border-radius: 5px;
+border: 1px solid grey;
+}
 
+.pay-btn {
+margin-top: 1em;
+width: 475.91px;
+height: 71.3px;
+background: #16DB99;
+cursor: pointer;
+font-size: 1.5rem;
+border-radius: 5px;
+}
 
-input[type='number']{
-  width: 80px;
+/* order completed */
+
+.order-completed-container{
+display: flex;
+}
+
+.thankyou-screen {
+  display: contents;
+}
+.thankyou-screen>p {
+width: 2000px;
+height: 120px;
+padding: 1em;
+margin: 1em;
+background: #ECFDF5;
+border-radius: 3px;
+text-align: center;
+font-size: 2rem;
+}
+
+/* modal close button */
+
+.close-modal-btn-container{
+  margin-left: 29em;
+  margin-top: 0.5em;
+}
+
+.modal-close-btn {
+font-size: 2rem;
+font-weight: bold;
+background-color: transparent;
+border: 1px solid transparent;
+color: black;
+cursor: pointer;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+  color: gray;
+  cursor: pointer;
+}
+
+/* utility */
+
+.hidden {
+display:none
+}
+
+.visible{
+display:block
 }
