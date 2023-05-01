@@ -164,7 +164,7 @@ function renderOrderedItems() {
     <h4>${item.name}</h4>
     <button data-remove="remove" data-index-number="${index}" class="remove-btn">Remove</button>
      </div>
-    <p data-price="price">$${item.price}</p>
+    <p data-price="price">$${item.price.toFixed(2)}</p>
     </div>`;
 	});
 	document.getElementById("total").innerHTML = html.join("");
@@ -207,17 +207,3 @@ function completeOrder() {
 
 
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function () {
-		this.classList.toggle("active");
-		var panel = this.nextElementSibling;
-		if (panel.style.display === "block") {
-			panel.style.display = "none";
-		} else {
-			panel.style.display = "block";
-		}
-	});
-}
