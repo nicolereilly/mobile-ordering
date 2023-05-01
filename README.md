@@ -39,14 +39,12 @@ Design of our web page needs the following: <br>
 - [ ] Send confirmation to customer <br>
 
 
-SPRINT 
-
 Planning Doc = https://docs.google.com/document/d/1LCsx3Xpn0gFwEim1POCoGat2cU7GLLtu5vqXc2VbzS0/edit
 
 Team Project Board = https://github.com/users/nicolereilly/projects/1/views/1
 
-Add to this repo secret variable (Settings>Secrets and Variables>Actions>Variables>New Repository Variable): 
-MONGO_URI = mongodb+srv://lschmidt:y0bLuTb1EZCYw9fg@cluster0.8khag9y.mongodb.net/?retryWrites=true&w=majority
-
+# Sprint 1 Image:
 ![image](https://user-images.githubusercontent.com/111534250/229915087-db9a3007-c199-45e3-80c8-365cfb8ce613.png)
-  
+
+# Sprint 2 Review in-class (4/18):
+Artifact is located at the wiki

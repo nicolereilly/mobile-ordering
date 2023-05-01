@@ -1,95 +1,140 @@
-
 <h2>
   <%=herokuVar %>
 </h2>
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 
 <head>
+  <h1>🍦Trowbridge's Mobile Order - Place Your Order Below!🍦</h1>
+  <div class="tab_container">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1"><span>Welcome</span></label>
 
-<title>TrowExpress987989870</title>
-  
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/style.css">
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2"><span>Menu</span></label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3"><span>Order</span></label>
+
+
+    <title>Trow Bridge Mobile Order</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
 <nav class="navbar navbar-expand-sm bg-light"> <!--Nav Bar-->
-    <h1>🍦Trowbridge's Mobile Order - Place Your Order Below!🍦</h1>
+  <h1></h1>
 </nav>
 
 <body>
-  
+  <!--WELCOME PAGE-->
 
-  <!-- partial:index.partial.html -->
-  <div class="row">
-        <div class="menu-card">
-          <h2 class="card-title">Sandwiches</h2>
-          <div class="card-body">
-            <p>Ham -- $3.85</p>
-            <p>Ham Salad -- $2.70</p>
-            <p>Chicken Salad -- $2.70</p>
-            <p>Pimento Cheese -- $2.70</p>
-            <p>Egg & Olive -- $2.70</p>
-            <p>Tuna -- $2.70</p>
-            <p>Tomato & Lettuce -- $1.65</p>
-            <p>Hot Dog -- $2.00</p>
-            <p>Grilled Cheese -- $1.50</p>
-            <p>Banana -- $1.65</p>
-            <p>Turkey -- $3.85</p>
-            <p>Biscuit/Jelly -- $0.75</p>
-            <p>Ham & Buscuit -- $1.30</p>
-          </div> <!--sandwiches !-->
-        </div> <!--sandwiches !-->
-        <div class="menu-card">
-          <h2 class="card-title">Drinks</h2>
-          <div class="card-body">
-            <p>Hot Chocolate -- $1.10</p>
-            <p>Milk -- $1.00</p>
-            <p>Coffee -- $0.95</p>
-            <p>Soft Drinks -- $1.15</p>
-            <p>Tea -- $0.95</p>
-            <p>Lemonade -- $0.95</p>
-          </div> <!--drinks !-->
-        </div> <!--drinks !-->
-        <div class="menu-card">
-          <h2 class="card-title">Malts/Shakes</h2>
-          <div class="card-body">
-            <p>Malts -- $2.70</p>
-            <p>Shakes -- $2.60</p>
-            <p>Large Chocolate Milk -- $1.30</p>
-            <p>Small Chocolate Milk -- $1.10</p>
-          </div> <!--Malts/Shakes !-->
-        </div> <!--Malts/Shakes !-->
-        <div class="menu-card">
-          <h2 class="card-title">Ice Cream Soda</h2>
-          <div class="card-body">
-            <p>Cherry -- $2.00</p>
-            <p>Strawberry -- $2.00</p>
-            <p>Chocolate -- $2.00</p>
-          </div> <!--Ice Cream Soda !-->
-        </div> <!--Ice Cream Soda !-->
-        <div class="menu-card">
-          <h2 class="card-title">Sundaes</h2>
-          <div class="card-body">
-            <p>Banana Split -- $3.90</p>
-            <p>Fruit Split -- $3.70</p>
-            <p>Hot Fudge -- $2.80</p>
-            <p>Hot Butterscoth -- $2.80</p>
-            <p>Hot Caramel -- $2.80</p>
-            <p>Fruit -- $3.05</p>
-            <p>Cherry -- $2.75</p>
-            <p>Pineapple -- $2.75</p>
-            <p>Chocolate -- $2.75</p>
-            <p>Strawberry -- $2.75</p>
-          </div> <!--Sundaes !-->
-        </div> <!--Sundaes !-->
-  </div>
-  <br>
-  <h1>ICE CREAM FLAVORS</h1>
-  <!-- partial -->
-  <div class="row">
+  <section id="content1" class="tab-content">
+    <h1>Welcome to the Trowbridge Mobile Order App!</h1>
+    <h3>History</h3>
+    <h5>Trowbridge’s Ice Cream and Sandwich Shop (nee Bar), located at 316 North Court Street, is a truly a Florence,
+      Alabama landmark. Opened in 1918, Trowbridge’s is the oldest business still operating in its original location in
+      Florence. Still owned by the Trowbridge family (third generation, Paul’s grandson, Don), the shop seats fifty, and
+      the menu features sandwiches, chili, ice cream, milkshakes, and Wednesdays are bean day.
+
+      An unassuming building and restaurant with large windows that face Court Street, the eight stools at the food
+      counter allow customers to watch their sandwiches being assembled or their ice cream being dipped. Booths line the
+      wall on the left and various artworks (photographs, newspaper clippings, and a few original pieces by local
+      artists) are hung around the restaurant giving the customer an impromptu history of place; both Florence’s and
+      Trowbridge’s. Locals of a certain age will recognize the waitresses of yesteryear in the oil painting on the back
+      wall. Several small tables are scattered between the booths and the counter. The green vinyl padding on the stools
+      and the chairs, alongside the 1950s style formica tables, give the place a completely unassuming retro feel.</h5>
+
+  </section>
+
+  <!--MENU PAGE-->
+  <section id="content2" class="tab-content">
+    <br>
+    <h1>Browse Our Menu Below!</h1>
+    <br>
+    <div class="row">
+      <div class="menu-card">
+        <h2 class="card-title">Sandwiches</h2>
+        <div class="card-body">
+          <p>Ham -- $3.85</p>
+          <p>Ham Salad -- $2.70</p>
+          <p>Chicken Salad -- $2.70</p>
+          <p>Pimento Cheese -- $2.70</p>
+          <p>Egg & Olive -- $2.70</p>
+          <p>Tuna -- $2.70</p>
+          <p>Tomato & Lettuce -- $1.65</p>
+          <p>Hot Dog -- $2.00</p>
+          <p>Grilled Cheese -- $1.50</p>
+          <p>Banana -- $1.65</p>
+          <p>Turkey -- $3.85</p>
+          <p>Biscuit/Jelly -- $0.75</p>
+          <p>Ham & Buscuit -- $1.30</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <h2 class="card-title">Drinks</h2>
+        <div class="card-body">
+          <p>Hot Chocolate -- $1.10</p>
+          <p>Milk -- $1.00</p>
+          <p>Coffee -- $0.95</p>
+          <p>Soft Drinks -- $1.15</p>
+          <p>Tea -- $0.95</p>
+          <p>Lemonade -- $0.95</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <h2 class="card-title">Malts/Shakes</h2>
+        <div class="card-body">
+          <p>Malts -- $2.70</p>
+          <p>Shakes -- $2.60</p>
+          <p>Large Chocolate Milk -- $1.30</p>
+          <p>Small Chocolate Milk -- $1.10</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <h2 class="card-title">Ice Cream Soda</h2>
+        <div class="card-body">
+          <p>Cherry -- $2.00</p>
+          <p>Strawberry -- $2.00</p>
+          <p>Chocolate -- $2.00</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <h2 class="card-title">Sundaes</h2>
+        <div class="card-body">
+          <p>Banana Split -- $3.90</p>
+          <p>Fruit Split -- $3.70</p>
+          <p>Hot Fudge -- $2.80</p>
+          <p>Hot Butterscoth -- $2.80</p>
+          <p>Hot Caramel -- $2.80</p>
+          <p>Fruit -- $3.05</p>
+          <p>Cherry -- $2.75</p>
+          <p>Pineapple -- $2.75</p>
+          <p>Chocolate -- $2.75</p>
+          <p>Strawberry -- $2.75</p>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <h1>Ice Cream Sizes</h1>
+    <div class="icecream-card">
+      <div class="card-body">
+        <p>Cones / per dip -- $1.10</p>
+        <p>Dish -- $2.20</p>
+        <p>1/2 Pint -- $2.20</p>
+        <p>Pints -- $4.40</p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <h1>Ice Cream Flavors</h1>
+    <br>
+    <div class="row">
       <div class="flavor-card">
         <div class="card-body">
           <p>Vanilla</p>
@@ -99,7 +144,7 @@
           <p>Rainbow Sherbet</p>
           <p>Cookie Dough</p>
         </div>
-    </div>
+      </div>
       <div class="flavor-card">
         <div class="card-body">
           <p>Orange Pineapple</p>
@@ -119,94 +164,238 @@
           <p>Sugarfree Vanilla</p>
           <p>Sugarfree Butter Pecan</p>
         </div>
-    </div>
-    <div class="icecream-card">
-      <h2 class="card-title">Ice Cream Information</h2>
-      <hr class="rounded">
-      <div class="card-body">
-        <p>Cones / per dip -- $1.10</p>
-        <p>Dish -- $2.20</p>
-        <p>1/2 Pint -- $2.20</p>
-        <p>Pints -- $4.40</p>
-        <p>Oh-My-Gosh -- $2.80</p>
       </div>
     </div>
-  </div>  <!--Ice Cream Flavors-->
+  </section>
+  <!--ORDER PAGE-->
+  <section id="content3" class="tab-content">
+    <h1>Start order below:</h1>
 
-  <hr class="rounded">
-  <h3>Start order below:</h3>
+    <!--DRINKS DROP DOWN-->
+    <div class="dropdown">
+      <button class="dropbtn">Drinks</button>
+      <div class="dropdown-content">
+        <a href="#">Hot Chocolate ($1.10)</a>
+        <a href="#">Milk ($1.00)</a>
+        <a href="#">Coffee ($0.95)</a>
+        <a href="#">Soft Drink ($1.15) </a>
+        <a href="#">Tea ($0.95)</a>
+        <a href="#">Lemonade ($0.95)</a>
+      </div>
+    </div>
 
-  <form method="POST" action="/addDrink">
-    <label for="drink_name">Flavor: </label>
-    <input name="drink_name" value="vanilla">
-    <br>
-    <label for="size">PRICE: </label>
-    <input name="size" value="$2.99">
-    <br>
-    <input type="submit" value="Create" />
-  </form>
+    <!--SANDWICH DROPTDOWN-->
+    <div class="dropdown">
+      <button class="dropbtn">Sandwiches</button>
+      <div class="dropdown-content">
+        <a href="#">Ham ($3.85)</a>
+        <a href="#">Ham Salad ($2.70)</a>
+        <a href="#">Chicken Salad ($2.70)</a>
+        <a href="#">Pimento Cheese ($2.70) </a>
+        <a href="#">Egg & Olive ($2.70)</a>
+        <a href="#">Hot Dog ($2.00)</a>
+        <a href="#">Grilled Cheese ($1.50)</a>
+        <a href="#">Banana ($1.65)</a>
+        <a href="#">Turkey ($3.85)</a>
+        <a href="#">Biscuit/Jelly ($0.75)</a>
+        <a href="#">Ham and Biscuit ($1.30)</a>
+      </div>
+    </div>
+
+    <!--Malts/Shakes DROPTDOWN-->
+    <div class="dropdown">
+      <button class="dropbtn">Malts + Shakes</button>
+      <div class="dropdown-content">
+        <a href="#">Malt ($1.10)</a>
+        <a href="#">Shake ($2.60)</a>
+        <a href="#">Large Chocolate Milk ($1.30)</a>
+        <a href="#">Small Chocolate Milk ($1.10) </a>
+      </div>
+    </div>
+    <!--Ice Cream Soda DROPTDOWN-->
+    <div class="dropdown">
+      <button class="dropbtn">Ice Cream Soda</button>
+      <div class="dropdown-content">
+        <a href="#">Cherry ($2.00)</a>
+        <a href="#">Strawberry ($2.00)</a>
+        <a href="#">Chocolate ($2.00)</a>
+      </div>
+    </div>
+
+    <!--Cones DROPTDOWN-->
+    <div class="dropdown">
+      <button class="dropbtn">Ice Cream Cones</button>
+      <div class="dropdown-content">
+        <a href="#">Vanilla ($1.10 per scoop)</a>
+        <a href="#">Chocolate Chip ($1.10 per scoop)</a>
+        <a href="#">Peacy Peach ($1.10 per scoop)</a>
+        <a href="#">Chocolate Carmel Cherry ($1.10 per scoop)</a>
+        <a href="#">Rainbow Sherbert ($1.10 per scoop)</a>
+        <a href="#">Cookie Dough ($1.10 per scoop)</a>
+        <a href="#">Orange Pineapple ($1.10 per scoop)</a>
+        <a href="#">O'Charleys Carmel Pie ($1.10 per scoop)</a>
+        <a href="#">Chocolate ($1.10 per scoop)</a>
+        <a href="#">Strawberry ($1.10 per scoop)</a>
+        <a href="#">Black Walnut ($1.10 per scoop)</a>
+        <a href="#">Cookies and Cream ($1.10 per scoop)</a>
+        <a href="#">Butter Pecan ($1.10 per scoop)</a>
+        <a href="#">Cherry Vanilla ($1.10 per scoop)</a>
+        <a href="#">Red Velvet Cake ($1.10 per scoop)</a>
+        <a href="#">Chocolate Marshmallow Almond ($1.10 per scoop)</a>
+        <a href="#">Sugarfree Vanilla ($1.10 per scoop)</a>
+        <a href="#">Sugarfree Buttered Pecan ($1.10 per scoop)</a>
+      </div>
+    </div>
+    <!--DISH DROP DOWN-->
+    <div class="dropdown">
+      <button class="dropbtn">Dish ($2.20)</button>
+      <div class="dropdown-content">
+        <a href="#">Vanilla</a>
+        <a href="#">Chocolate Chip</a>
+        <a href="#">Peacy Peach</a>
+        <a href="#">Chocolate Carmel Cherry</a>
+        <a href="#">Rainbow Sherbert</a>
+        <a href="#">Cookie Dough</a>
+        <a href="#">Orange Pineapple</a>
+        <a href="#">O'Charleys Carmel Pie</a>
+        <a href="#">Chocolate</a>
+        <a href="#">Strawberry</a>
+        <a href="#">Black Walnut</a>
+        <a href="#">Cookies and Cream</a>
+        <a href="#">Butter Pecan</a>
+        <a href="#">Cherry Vanilla</a>
+        <a href="#">Red Velvet Cake</a>
+        <a href="#">Chocolate Marshmallow Almond</a>
+        <a href="#">Sugarfree Vanilla</a>
+        <a href="#">Sugarfree Buttered Pecan</a>
+      </div>
+    </div>
+
+    <!--1/2 Pint Dropdown-->
+    <div class="dropdown">
+      <button class="dropbtn">1/2 Pint ($2.20)</button>
+      <div class="dropdown-content">
+        <a href="#">Vanilla</a>
+        <a href="#">Chocolate Chip</a>
+        <a href="#">Peacy Peach</a>
+        <a href="#">Chocolate Carmel Cherry</a>
+        <a href="#">Rainbow Sherbert</a>
+        <a href="#">Cookie Dough</a>
+        <a href="#">Orange Pineapple</a>
+        <a href="#">O'Charleys Carmel Pie</a>
+        <a href="#">CHocolate</a>
+        <a href="#">Strawberry</a>
+        <a href="#">Black Walnut</a>
+        <a href="#">Cookies and Cream</a>
+        <a href="#">Butter Pecan</a>
+        <a href="#">Cherry Vanilla</a>
+        <a href="#">Red Velvet Cake</a>
+        <a href="#">Chocolate Marshmallow Almond</a>
+        <a href="#">Sugarfree Vanilla</a>
+        <a href="#">Sugarfree Buttered Pecan</a>
+      </div>
+    </div>
+    <!--Pint Dropdown-->
+    <div class="dropdown">
+      <button class="dropbtn">Pint ($4.40)</button>
+      <div class="dropdown-content">
+        <a href="#">Vanilla</a>
+        <a href="#">Chocolate Chip</a>
+        <a href="#">Peacy Peach</a>
+        <a href="#">Chocolate Carmel Cherry</a>
+        <a href="#">Rainbow Sherbert</a>
+        <a href="#">Cookie Dough</a>
+        <a href="#">Orange Pineapple</a>
+        <a href="#">O'Charleys Carmel Pie</a>
+        <a href="#">CHocolate</a>
+        <a href="#">Strawberry</a>
+        <a href="#">Black Walnut</a>
+        <a href="#">Cookies and Cream</a>
+        <a href="#">Butter Pecan</a>
+        <a href="#">Cherry Vanilla</a>
+        <a href="#">Red Velvet Cake</a>
+        <a href="#">Chocolate Marshmallow Almond</a>
+        <a href="#">Sugarfree Vanilla</a>
+        <a href="#">Sugarfree Buttered Pecan</a>
+      </div>
+    </div>
 
 
-  <h3>Update your items</h3>
-  <% for (var i=0; i< drinkData.length; i++ ) { %>
-  <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
-    <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
-      <input type="submit" value="Update">
-  </form>
-  <br>
-  <% } %>
+    <div class="order-card">
+      <h1>Your Cart:</h1>
+      <form method="POST" action="/addDrink">
+        <label for="drink_name">Flavor: </label>
+        <input name="drink_name" value="vanilla">
+        <br>
+        <label for="size">PRICE: </label>
+        <input name="size" value="$2.99">
+        <br>
+        <input type="submit" value="Create" />
+      </form>
 
-  <h3>Delete your items</h3>
-  <% for (var i=0; i< drinkData.length; i++ ) { %>
-  <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
-    <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
-      <input type="submit" value="Delete">
-  </form>
-  <br>
-  <% } %>
+      <h3>Update your items</h3>
+      <% for (var i=0; i< drinkData.length; i++ ) { %>
+        <form method="POST" action="/updateDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+          <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+              <input type="submit" value="Update">
+        </form>
+        <br>
+        <% } %>
+
+          <h3>Delete your items</h3>
+          <% for (var i=0; i< drinkData.length; i++ ) { %>
+            <form method="POST" action="/deleteDrink/<%= drinkData[i]._id %>" style="display: inline-block">
+              <%= drinkData[i].drink_name %> (<%= drinkData[i].size %>)
+                  <input type="submit" value="Delete">
+            </form>
+            <br>
+            <% } %>
+
+    </div>
+
+  </section>
 
 
-  <br>
-  <br>
-  <br>
-  
   <div class="card-footer"><!--footer-->
     <div class="footer card">
       <div class="row">
         <div class="col-md-4">
-          <h4>Author:</h4>
-          <p>Nicole Reilly</p>
-          <p>Katheryn White</p>
-          <p>Lane Schmidt</p>
-          <p>Kevin Salgado</p>
-          <p>Maggie Little</p>
+          <br>
+          <h3><u>Authors:</u></h3>
+          <h5> Nicole Reilly</h5>
+          <h5> Katheryn White</h5>
+          <h5> Lane Schmidt</h5>
+          <h5> Kevin Salgado</h5>
+          <h5> Maggie Little</h5>
         </div>
         <div class="col-md-4">
-          <h4>Links for you:</h4>
-          <p><a href="https://gist.github.com/barrycumbie/bbf76cb219a3e7579de1607d7e91fceb">Class Page</a></p>
-          <p><a href="https://github.com/nicolereilly">Nicole Reilly's GitHub</a></p>
-          <p><a href="https://github.com/katherynisabell">Katheryn White's GitHub</a></p>
-          <p><a href="https://github.com/lane30schmidt">Lane Schmidt's GitHub</a></p>
-          <p><a href="https://github.com/kbrian5">Kevin Salgado's GitHub</a></p>
-          <p><a href="https://github.com/mlittle98">Maggie Little's GitHub</a></p>
+          <br>
+          <h3><u>Links for you:</u></h3>
+          <h5><a href="https://gist.github.com/barrycumbie/bbf76cb219a3e7579de1607d7e91fceb">Class Page</a></h5>
+          <h5><a href="https://github.com/nicolereilly">Nicole Reilly's GitHub</a></h5>
+          <h5><a href="https://github.com/katherynisabell">Katheryn White's GitHub</a></h5>
+          <h5><a href="https://github.com/lane30schmidt">Lane Schmidt's GitHub</a></h5>
+          <h5><a href="https://github.com/kbrian5">Kevin Salgado's GitHub</a></h5>
+          <h5><a href="https://github.com/mlittle98">Maggie Little's GitHub</a></h5>
         </div>
         <div class="col-md-4">
-          <h4>What makes this page work:</h4>
-          <p><a href="https://github.com/nicolereilly/mobile-ordering">See The Code</a></p>
-          <p><a href="https://github.com/users/nicolereilly/projects/1">Here is our project page</a></p>
-          <p><a href="https://github.com/nicolereilly/mobile-ordering/wiki">Our Wiki</a></p>
+          <br>
+          <h3><u>What makes this page work:</u></h3>
+          <h5><a href="https://github.com/nicolereilly/mobile-ordering">See The Code</a></h5>
+          <h5><a href="https://github.com/users/nicolereilly/projects/1">Here is our project page</a></h5>
+          <h5><a href="https://github.com/nicolereilly/mobile-ordering/wiki">Our Wiki</a></h5>
         </div>
-        <h6>Consider this the copyright. Nicole Reilly, Katheryn White, Lane Schmidt, Kevin Salgado, and Maggie Little Made This !</h6>
       </div>
-    </div> 
+    </div>
   </div>
+  <h6>Consider this the copyright. Nicole Reilly, Katheryn White, Lane Schmidt, Kevin Salgado, and Maggie
+    Little Made This!</h6>
+  <nav>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"></script>
 </body>
 
 </html>
