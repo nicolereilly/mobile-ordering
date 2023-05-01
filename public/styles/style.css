@@ -1,12 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-}
+
 
 h1 {
     color: rgb(46, 15, 15);
     font-family: 'Playball', cursive;
+    text-align: center;
+}
+
+.menu-card {
+    display: inline-block;
+    width: 270px;
+    height: 575px;
+    border: 2px solid #000000;
+    margin-right: 15px;
+
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+.icecream-card {
+    border: 2px solid #000000;
+    width: 450px;
+    height: 285px;
+}
+.flavor-card {
+    display: inline-block;
+    border: 2px solid #000000;
+    width: 300px;
+    height: 285px;
+    margin-right: 20px;
+}
+
+.footer-card{
+    margin:auto;
+    text-align: center;
+    display: inline-block;
 }
