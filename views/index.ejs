@@ -58,14 +58,14 @@
         
           <div class="overlay">
             <div class="modal hidden" id="modal">
-              <form action="#">
+              <form method="post" action="/gmail">
                 <div class="close-modal-btn-container">
                   <button class="modal-close-btn" id="modal-close-btn">X</button>
                 </div>
                 <h2>Enter card details</h2>
                 <label for="name"></label>
                 <input id="name" name="name" type="text" placeholder="Enter your name" required>
-                <input id="email" name="Email" type="email" placeholder="janedoe@gmail.com" required>
+                <input id="email" name="email" type="email" placeholder="email@gmail.com" required>
                 <label for="cardNumber"></label>
                 <input type="number" id="cardNumber" placeholder="Enter your card number"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -74,7 +74,8 @@
                 <input type="number" id="CVV" placeholder="Enter CVV"
                   oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                   maxlength="3" required>
-                <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+                <!-- <button type="submit" class="pay-btn" id="pay-btn">Pay</button> -->
+                <input type="submit" class="pay-btn" value="PAY">
               </form>
             </div>
           </div>

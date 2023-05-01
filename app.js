@@ -1,4 +1,6 @@
-require("dotenv").config();
+require("dotenv").config()
+const nodemailer = require('nodemailer')
+// pass: process.env.APP_PWD
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
@@ -117,4 +119,36 @@ app.post('/deleteDrink/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running & listening on port ${PORT}`);
 });
+
+app.post('/gmail', (req, res) => {
+
+  console.log("here");
+  console.log(req.body); 
+
+  var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'laneslyf@gmail.com',
+      pass: process.env.APP_PWD
+    }
+  });
+
+  var mailOptions = {
+    from: 'laneslyf@gmail.com',
+    to: req.body.email,
+    subject: 'Trowbridges Mobile Ordering Confirmation!',
+    text: 'Hello ' + req.body.name +', thank you so much for your order! Your order is estimated to be ready in 5-10 minutes.' + '\n' + '\n' + 'Sincerely, Trowbridges Mobile Ordering Team'
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
+  res.redirect('/');
+
+})
 
