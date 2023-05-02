@@ -44,8 +44,8 @@ input {
     width: 50%;
     height: 71.3px;
     margin: 0.5em;
-    border-radius: 5px;
-    border: 1px solid #6E3E1E;
+    /* border-radius: 5px; */
+    /* border: 1px solid #6E3E1E; */
 }
 
 .pay-btn {
