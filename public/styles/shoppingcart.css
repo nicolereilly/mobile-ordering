@@ -44,7 +44,7 @@ input {
     width: 50%;
     height: 71.3px;
     margin: 0.5em;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     /* border: 1px solid #6E3E1E; */
 }
 
@@ -63,10 +63,16 @@ input {
 
 .order-completed-container {
     display: flex;
+    background: #FF8080;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: blue;
 }
 
 .thankyou-screen {
     display: contents;
+    background: #FF8080;
 }
 
 .thankyou-screen>p {
@@ -74,7 +80,7 @@ input {
     height: 120px;
     padding: 1em;
     margin: 1em;
-    background: #ECFDF5;
+    background: #FF8080;
     border-radius: 3px;
     text-align: center;
     font-size: 2rem;

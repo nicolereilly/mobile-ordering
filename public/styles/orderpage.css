@@ -101,3 +101,14 @@ div#order-items {
     cursor: pointer;
     margin-bottom: 1em;
 }
+
+.thankyou-btn {
+    width: 508px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: none;
+    background: #FFF7D7;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
