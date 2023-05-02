@@ -1,5 +1,7 @@
 # 🍦 Trowbridge's Mobile Order App 🍦
 
+Presentation: https://docs.google.com/presentation/d/13bT_nVR9bMJ1Ha8rJ24zBapvOzhUonyMQqCFPZkRNR0/edit#slide=id.p
+
 ![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)
 
 # Story Card :clipboard: <br>
@@ -42,9 +44,3 @@ Design of our web page needs the following: <br>
 Planning Doc = https://docs.google.com/document/d/1LCsx3Xpn0gFwEim1POCoGat2cU7GLLtu5vqXc2VbzS0/edit
 
 Team Project Board = https://github.com/users/nicolereilly/projects/1/views/1
-
-# Sprint 1 Image:
-![image](https://user-images.githubusercontent.com/111534250/229915087-db9a3007-c199-45e3-80c8-365cfb8ce613.png)
-
-# Sprint 2 Review in-class (4/18):
-Artifact is located at the wiki
