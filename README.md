@@ -1,5 +1,7 @@
 # 🍦 Trowbridge's Mobile Order App 🍦
 
+# Presentation: https://docs.google.com/presentation/d/13bT_nVR9bMJ1Ha8rJ24zBapvOzhUonyMQqCFPZkRNR0/edit#slide=id.p
+
 ![Image](https://user-images.githubusercontent.com/111913185/229928402-12a5fc52-5c67-470e-b95e-02c4599d7286.png)
 
 # Story Card :clipboard: <br>
