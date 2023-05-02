@@ -137,7 +137,7 @@ app.post('/gmail', (req, res) => {
     from: 'laneslyf@gmail.com',
     to: req.body.email,
     subject: 'Trowbridges Mobile Ordering Confirmation!',
-    text: 'Hello ' + req.body.name +', thank you so much for your order! Your order is estimated to be ready in 5-10 minutes.' + '\n' + '\n' + 'Sincerely, Trowbridges Mobile Ordering Team'
+    text: '🍦 Hello, ' + req.body.name +', thank you so much for your order! Your order is estimated to be ready in 5-10 minutes.🍦' + '\n' + '\n' + 'Sincerely, Trowbridges Mobile Ordering Team'
   };
 
   transporter.sendMail(mailOptions, function(error, info){

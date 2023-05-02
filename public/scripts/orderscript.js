@@ -152,8 +152,8 @@ function renderThankScreen(e) {
 	const payerName = document.getElementById("name").value
 	const payerEmail = document.getElementById("email").value
 
-	document.getElementById("thankyou-screen").innerHTML = `<h2> Your order is on its way!
-	Please refresh your homepage to go back to the ordering screen. Thank you for your business!</h2>
+	document.getElementById("thankyou-screen").innerHTML = `<h2> Your has been sent! Please allow 5-10 minutes for preparation. 
+	Thank you for your business! To place another order please refresh your screen. </h2>
   `
 }
 
