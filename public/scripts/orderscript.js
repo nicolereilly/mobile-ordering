@@ -175,7 +175,7 @@ function renderTotal() {
 	const totalPrice = itemPrices.reduce((a, b) => a + b, 0).toFixed(2);
 	document.getElementById(
 		"total-price"
-	//let totalPrice = num.toFixed(2);
+		//let totalPrice = num.toFixed(2);
 	).innerHTML = `Total Price: <span>$${totalPrice}</span>`;
 }
 

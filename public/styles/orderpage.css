@@ -1,0 +1,72 @@
+/* Order Cart Screen */
+
+div#order-total {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-items,
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3#total-price {
+    width: 100%;
+}
+
+.order-items,
+.item-row {
+    height: 100px;
+    width: auto;
+    font-size: large;
+
+}
+
+div#order-items {
+    display: flex;
+    width: 100%;
+    font-size: large;
+}
+
+.total-price {
+    border-top: 2px solid #D2D2D2;
+    padding: 1em;
+}
+
+.item-row {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.remove-btn {
+    width: 200px;
+    /* height: 20px; */
+    margin: 5.5em;
+    border: 1px solid #D2D2D2;
+    background: none;
+    color: #FF5A5F;
+    cursor: pointer;
+}
+
+.order-total,
+.remove-btn {
+    text-align: center;
+    font-size: 1.3rem;
+    font-size: large;
+
+}
+
+.complete-order-btn {
+    width: 508px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: none;
+    background: #FFF7D7;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
