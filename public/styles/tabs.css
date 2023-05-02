@@ -17,19 +17,19 @@ label {
 /* displays content */
 #tab1:checked~#content1,
 #tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4,
-#tab5:checked~#content5 {
+#tab3:checked~#content3
+
+ {
   display: block;
-  padding: 20px;
+  padding: 10px;
   background: #FFF7D7;
   color: #6E3E1E;
-  border-top: #6E3E1E;
-  border-bottom: 2px solid #6E3E1E;
+  /* border-top: #6E3E1E; */
+  /* border-bottom: 2px solid #6E3E1E; */
 }
 
 
-.tab_container {
+.tab_container1 {
   background: #E97575;
 }
 

@@ -4,7 +4,7 @@
   }
 
   .flex {
-    border-spacing:5px; /* need some space ?*/
+    border-spacing:5px; 
     display:table;
     table-layout:fixed;
     width:100%;
